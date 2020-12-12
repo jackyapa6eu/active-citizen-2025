@@ -1,0 +1,5 @@
+.petition__output-text {
+  white-space: pre-line;
+  max-height: 300px;
+  overflow: hidden;
+}

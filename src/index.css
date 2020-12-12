@@ -1,0 +1,8 @@
+@import url(./styles/vendor/normalize.css);
+@import url(./styles/blocks/App/App.css);
+@import url(./styles/blocks/page/page.css);
+@import url(./styles/blocks/header/header.css);
+@import url(./styles/blocks/main/main.css);
+@import url(./styles/blocks/footer/footer.css);
+@import url(./styles/blocks/petition/petition.css);
+@import url(./styles/blocks/petition/__output-text/petition__output-text.css);
