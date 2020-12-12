@@ -62,16 +62,16 @@ function App() {
     <div className="App">
       <div className="page">
         <header className="header">
-          <Link to="/">домой</Link>
-          <Link to="/user">пользователь</Link>
+          <Link to="/active-citizen-2025">домой</Link>
+          <Link to="active-citizen-2025/user">пользователь</Link>
         </header>
         <main className="main">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="active-citizen-2025/">
               <PetitionForm/>
               <Petitions petitions={petitions}/>
             </Route>
-            <Route path="/user">
+            <Route path="active-citizen-2025/user">
               <User/>
             </Route>
           </Switch>
