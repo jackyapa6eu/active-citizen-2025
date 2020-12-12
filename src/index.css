@@ -4,5 +4,8 @@
 @import url(./styles/blocks/header/header.css);
 @import url(./styles/blocks/main/main.css);
 @import url(./styles/blocks/footer/footer.css);
-@import url(./styles/blocks/petition/petition.css);
-@import url(./styles/blocks/petition/__output-text/petition__output-text.css);
+@import url(./styles/blocks/petition-form/petition-form.css);
+@import url(./styles/blocks/petitions/petitions.css);
+@import url(./styles/blocks/petitions/__item/petitions__item.css);
+@import url(./styles/blocks/petitions/__title/petitions__title.css);
+@import url(./styles/blocks/petitions/__text/petitions__text.css);
