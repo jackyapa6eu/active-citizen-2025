@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./active-citizen-2025/static/css/main.92886658.chunk.css",
-    "main.js": "./active-citizen-2025/static/js/main.efedd8d5.chunk.js",
-    "main.js.map": "./active-citizen-2025/static/js/main.efedd8d5.chunk.js.map",
-    "runtime-main.js": "./active-citizen-2025/static/js/runtime-main.87cf0b52.js",
-    "runtime-main.js.map": "./active-citizen-2025/static/js/runtime-main.87cf0b52.js.map",
-    "static/js/2.5000664f.chunk.js": "./active-citizen-2025/static/js/2.5000664f.chunk.js",
-    "static/js/2.5000664f.chunk.js.map": "./active-citizen-2025/static/js/2.5000664f.chunk.js.map",
-    "static/js/3.5f93d8c0.chunk.js": "./active-citizen-2025/static/js/3.5f93d8c0.chunk.js",
-    "static/js/3.5f93d8c0.chunk.js.map": "./active-citizen-2025/static/js/3.5f93d8c0.chunk.js.map",
-    "index.html": "./active-citizen-2025/index.html",
-    "static/css/main.92886658.chunk.css.map": "./active-citizen-2025/static/css/main.92886658.chunk.css.map",
-    "static/js/2.5000664f.chunk.js.LICENSE.txt": "./active-citizen-2025/static/js/2.5000664f.chunk.js.LICENSE.txt",
-    "static/media/user__image.2cf1b068.png": "./active-citizen-2025/static/media/user__image.2cf1b068.png"
+    "main.css": "/active-citizen-2025/static/css/main.92886658.chunk.css",
+    "main.js": "/active-citizen-2025/static/js/main.efedd8d5.chunk.js",
+    "main.js.map": "/active-citizen-2025/static/js/main.efedd8d5.chunk.js.map",
+    "runtime-main.js": "/active-citizen-2025/static/js/runtime-main.986900ee.js",
+    "runtime-main.js.map": "/active-citizen-2025/static/js/runtime-main.986900ee.js.map",
+    "static/js/2.2d2a9bcc.chunk.js": "/active-citizen-2025/static/js/2.2d2a9bcc.chunk.js",
+    "static/js/2.2d2a9bcc.chunk.js.map": "/active-citizen-2025/static/js/2.2d2a9bcc.chunk.js.map",
+    "static/js/3.5f93d8c0.chunk.js": "/active-citizen-2025/static/js/3.5f93d8c0.chunk.js",
+    "static/js/3.5f93d8c0.chunk.js.map": "/active-citizen-2025/static/js/3.5f93d8c0.chunk.js.map",
+    "index.html": "/active-citizen-2025/index.html",
+    "static/css/main.92886658.chunk.css.map": "/active-citizen-2025/static/css/main.92886658.chunk.css.map",
+    "static/js/2.2d2a9bcc.chunk.js.LICENSE.txt": "/active-citizen-2025/static/js/2.2d2a9bcc.chunk.js.LICENSE.txt",
+    "static/media/user__image.2cf1b068.png": "/active-citizen-2025/static/media/user__image.2cf1b068.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.87cf0b52.js",
-    "static/js/2.5000664f.chunk.js",
+    "static/js/runtime-main.986900ee.js",
+    "static/js/2.2d2a9bcc.chunk.js",
     "static/css/main.92886658.chunk.css",
     "static/js/main.efedd8d5.chunk.js"
   ]
