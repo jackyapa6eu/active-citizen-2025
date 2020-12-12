@@ -1,0 +1,4 @@
+.user__lobby {
+  display: flex;
+  flex-direction: column;
+}
