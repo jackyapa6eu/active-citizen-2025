@@ -1,5 +1,10 @@
 .user__title {
   margin: 0;
-  font-size: 46px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: #101010;
 }

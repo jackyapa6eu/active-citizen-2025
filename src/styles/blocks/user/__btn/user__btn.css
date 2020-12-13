@@ -1,0 +1,17 @@
+.user__btn {
+  width: 255px;
+  height: 50px;
+
+  background: linear-gradient(89.87deg, #8E4FF6 26.68%, #4F92F6 92.81%);
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FDFDFD;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
