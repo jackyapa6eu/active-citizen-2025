@@ -1,12 +1,8 @@
 .petitions__container_rating {
-  position: absolute;
   top: 145px;
   left: 10px;
   background: #C1A60A;
   width: 145px;
   height: 30px;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
   padding: 0 10px;
 }
