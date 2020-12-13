@@ -4,9 +4,10 @@
 @import url(./styles/blocks/App/App.css);
 @import url(./styles/blocks/page/page.css);
 @import url(./styles/blocks/header/header.css);
+@import url(./styles/blocks/header/__logo/header__logo.css);
+@import url(./styles/blocks/header/__add-btn/header__add-btn.css);
 @import url(./styles/blocks/main/main.css);
 @import url(./styles/blocks/footer/footer.css);
-@import url(./styles/blocks/petition-form/petition-form.css);
 @import url(./styles/blocks/petitions/petitions.css);
 @import url(./styles/blocks/petitions/__item/petitions__item.css);
 @import url(./styles/blocks/petitions/__title/petitions__title.css);
@@ -21,3 +22,10 @@
 @import url(./styles/blocks/user/__input/_password/user__input_password.css);
 @import url(./styles/blocks/user/__btn/user__btn.css);
 @import url(./styles/blocks/user/__btn/_sing-in/user__btn_sing-in.css);
+@import url(./styles/blocks/add-new/add-new.css);
+@import url(./styles/blocks/add-new/__image/add-new__image.css);
+@import url(./styles/blocks/add-new/__form/add-new__form.css);
+@import url(./styles/blocks/add-new/__input/add-new__input.css);
+@import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
+@import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
+@import url(./styles/blocks/add-new/__btns-wrapper/add-new__btns-wrapper.css);

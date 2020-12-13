@@ -7,4 +7,6 @@
   outline: 2px solid black;
   min-height: 100vh;
   background: #fff;
+  padding: 0px 5.4%;
+  box-sizing: border-box;
 }
