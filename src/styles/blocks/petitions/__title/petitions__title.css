@@ -1,3 +1,10 @@
 .petitions__title {
-  
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 110%;
+  color: #101010;
+  width: 150px;
+  max-height: 132px;
+  margin: 0;
 }
