@@ -1,0 +1,10 @@
+.opened-petition__image {
+  position: relative;
+  width: 86%;
+  height: 350px;
+  margin-bottom: 22px;
+  background-image: url('../../../images/opened-petition__image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

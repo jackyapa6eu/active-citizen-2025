@@ -1,0 +1,13 @@
+.opened-petition__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+  width: 351px;
+  min-height: 351px;
+  background: #8E4FF6;
+  z-index: 1;
+}

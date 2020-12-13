@@ -1,0 +1,9 @@
+.opened-petition__title {
+  white-space: pre-line;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.1;
+  margin: 0;
+  color: white;
+  margin-bottom: 48px;
+}
