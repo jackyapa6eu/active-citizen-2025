@@ -2,15 +2,16 @@ import React from 'react';
 import '../index.css';
 import {
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/database";
+import UserContext from '../contexts/UserContext';
 import Petitions from './Petitions';
 import PetitionForm from './Petition-form';
 import User from './User';
+import Header from './Header';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -71,35 +72,26 @@ function App() {
     })
   }
 
-  function signOut() {
-    firebase.auth().signOut().then(function() {
-      setUser({})
-      console.log('signOut success');
-    }).catch(function(error) {
-      console.log(error);
-    });
-  }
 
   return (
     <div className="App">
-      <div className="page">
-        <header className="header">
-          <Link to="/">домой</Link>
-          {user.uid ? <div><span>{user.name}  </span><span onClick={signOut}>  выход</span></div> : <Link to="/user">пользователь</Link>}     
-        </header>
-        <main className="main">
-          <Switch>
-            <Route exact path="/">
-              <PetitionForm/>
-              <Petitions petitions={petitions}/>
-            </Route>
-            <Route path="/user">
-              <User/>
-            </Route>
-          </Switch>
-        </main>
-        <footer className="footer">footer</footer>
-      </div>
+      <UserContext.Provider value={user}>
+        <div className="page">
+          <Header setUser={setUser}/>
+          <main className="main">
+            <Switch>
+              <Route exact path="/">
+                <PetitionForm/>
+                <Petitions petitions={petitions}/>
+              </Route>
+              <Route path="/user">
+                <User/>
+              </Route>
+            </Switch>
+          </main>
+          <footer className="footer">footer</footer>
+        </div>
+      </UserContext.Provider>
     </div>
   );
 }

@@ -49,9 +49,9 @@ function PetitionForm() {
   }
 
   return (
-    <form className="petition-form" onSubmit={handleSubmit}>
-      <input className="petition-form__input" type="text" ref={inputRef}/>
-      <button type="submit" className="petition-form__submit-btn">Найти</button>
+  <form className="petition-form" onSubmit={handleSubmit}>
+    <input className="petition-form__input" type="text" ref={inputRef}/>
+    <button type="submit" className="petition-form__submit-btn">Найти</button>
   </form>
   );
 }
