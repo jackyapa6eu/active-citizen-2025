@@ -1,8 +1,5 @@
 .petitions {
-  max-width: 1110px;
-  margin: 40px auto 94px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
-  grid-template-rows: repeat(auto-fill, 350px);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
