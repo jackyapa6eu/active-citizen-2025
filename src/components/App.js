@@ -25,10 +25,11 @@ firebase.initializeApp(firebaseConfig);
 
 function App() {
   const [petitions, setPetitions] = React.useState([]);
+  const [user, setUser] = React.useState({});
   React.useEffect(() => {
     authUser();
     getPetitions();
-  }, [])
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   function getPetitions() {
     const petitionsRef = firebase.database().ref('petitions/');
@@ -51,27 +52,48 @@ function App() {
   function authUser() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        console.log(user);
+        getUserData(user.uid);
       } else {
         console.log('no user');
         }
     });   
   }
 
+  function getUserData(uid) {
+    const userRef = firebase.database().ref('users/'+ uid);
+    userRef.once('value', (snapshot) => {
+      if (snapshot.val() === null) {
+        console.log('ничего нет');
+        return
+      }
+      const obj = snapshot.val();
+      setUser(obj);
+    })
+  }
+
+  function signOut() {
+    firebase.auth().signOut().then(function() {
+      setUser({})
+      console.log('signOut success');
+    }).catch(function(error) {
+      console.log(error);
+    });
+  }
+
   return (
     <div className="App">
       <div className="page">
         <header className="header">
-          <Link to="/active-citizen-2025">домой</Link>
-          <Link to="/active-citizen-2025/user">пользователь</Link>
+          <Link to="/">домой</Link>
+          {user.uid ? <div><span>{user.name}  </span><span onClick={signOut}>  выход</span></div> : <Link to="/user">пользователь</Link>}     
         </header>
         <main className="main">
           <Switch>
-            <Route exact path="/active-citizen-2025/">
+            <Route exact path="/">
               <PetitionForm/>
               <Petitions petitions={petitions}/>
             </Route>
-            <Route path="/active-citizen-2025/user">
+            <Route path="/user">
               <User/>
             </Route>
           </Switch>
