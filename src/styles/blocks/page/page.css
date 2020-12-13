@@ -6,4 +6,6 @@
   margin: 0 auto;
   outline: 2px solid black;
   min-height: 100vh;
+  padding: 0px 5.4%;
+  box-sizing: border-box;
 }

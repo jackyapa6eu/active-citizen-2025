@@ -1,5 +1,4 @@
-.main {
-  flex: 1;
+.user__lobby {
   display: flex;
   flex-direction: column;
 }
