@@ -1,13 +1,24 @@
 import React from 'react';
+import petitionImage from '../styles/images/image1.png';
 
 function Petition({petition}) {
   return (
         <div className="petitions__item">
-          <h3 className="petitions__title">{petition.poem.fields.name}</h3>
-          <p>Пользователь ввел:</p>
-          <p className="petitions__text">{petition.realText}</p>
-          <p>Стих (первые 15 строчек):</p>
-          <p className="petitions__text">{petition.poem.fields.text}</p>
+          <div class="petitions__container petitions__container_title">
+            <h3 className="petitions__title">{petition.poem.fields.name}</h3>
+            <p class="petitions__data">12 декабря 2020</p>
+          </div>
+          <div class="petitions__container petitions__container_rating">
+            <div class="flex">
+              <button class="btn btn_like"></button>
+              <p class="petitions__rating">1024</p>
+            </div>
+            <div class="flex">
+              <button class="btn btn_dislike"></button>
+              <p class="petitions__rating">362</p>
+            </div>
+          </div>
+          <img src={petitionImage} alt="" class="petitions__image"/>
         </div>
         )
 }
