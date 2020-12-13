@@ -16,7 +16,7 @@ function User() {
   const signInEmailInputRef = React.useRef();
   const signInPassInputRef = React.useRef();
   const [errorMsg, setErrorMsg] = React.useState('');
-  let history = useHistory();
+  const history = useHistory();
 
   function signUp(event) {
     event.preventDefault();
