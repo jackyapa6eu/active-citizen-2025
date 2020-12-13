@@ -1,3 +1,5 @@
 .header {
   background: green;
+  display: flex;
+  justify-content: space-between;
 }

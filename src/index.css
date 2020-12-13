@@ -9,3 +9,9 @@
 @import url(./styles/blocks/petitions/__item/petitions__item.css);
 @import url(./styles/blocks/petitions/__title/petitions__title.css);
 @import url(./styles/blocks/petitions/__text/petitions__text.css);
+@import url(./styles/blocks/user/user.css);
+@import url(./styles/blocks/user/__image/user__image.css);
+@import url(./styles/blocks/user/__title/user__title.css);
+@import url(./styles/blocks/user/__lobby/user__lobby.css);
+@import url(./styles/blocks/user/__form/user__form.css);
+@import url(./styles/blocks/user/__question/user__question.css);
