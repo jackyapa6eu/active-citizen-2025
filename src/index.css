@@ -1,4 +1,6 @@
 @import url(./styles/vendor/normalize.css);
+@import url(./styles/vendor/fonts/fonts.css);
+
 @import url(./styles/blocks/App/App.css);
 @import url(./styles/blocks/page/page.css);
 @import url(./styles/blocks/header/header.css);
@@ -16,6 +18,10 @@
 @import url(./styles/blocks/user/__lobby/user__lobby.css);
 @import url(./styles/blocks/user/__form/user__form.css);
 @import url(./styles/blocks/user/__question/user__question.css);
+@import url(./styles/blocks/user/__input/user__input.css);
+@import url(./styles/blocks/user/__input/_password/user__input_password.css);
+@import url(./styles/blocks/user/__btn/user__btn.css);
+@import url(./styles/blocks/user/__btn/_sing-in/user__btn_sing-in.css);
 @import url(./styles/blocks/add-new/add-new.css);
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
 @import url(./styles/blocks/add-new/__form/add-new__form.css);
