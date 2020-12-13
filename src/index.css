@@ -1,6 +1,5 @@
 @import url(./styles/vendor/normalize.css);
 @import url(./styles/vendor/fonts/fonts.css);
-
 @import url(./styles/blocks/App/App.css);
 @import url(./styles/blocks/page/page.css);
 @import url(./styles/blocks/header/header.css);
@@ -40,3 +39,12 @@
 @import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
 @import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
 @import url(./styles/blocks/add-new/__btns-wrapper/add-new__btns-wrapper.css);
+@import url(./styles/blocks/opened-petition/opened-petition.css);
+@import url(./styles/blocks/opened-petition/__text/opened-petition__text.css);
+@import url(./styles/blocks/opened-petition/__image/opened-petition__image.css);
+@import url(./styles/blocks/opened-petition/__reactions/opened-petition__reactions.css);
+@import url(./styles/blocks/opened-petition/__reactions-item/opened-petition__reactions-item.css);
+@import url(./styles/blocks/opened-petition/__author/opened-petition__author.css);
+@import url(./styles/blocks/opened-petition/__info/opened-petition__info.css);
+@import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
+@import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);

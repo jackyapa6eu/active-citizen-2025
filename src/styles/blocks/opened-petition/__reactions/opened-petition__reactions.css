@@ -1,0 +1,7 @@
+.opened-petition__reactions {
+  position: absolute;
+  background: green;
+  left: 0;
+  top: -58px;
+  height: 36px;
+}
