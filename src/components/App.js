@@ -12,6 +12,7 @@ import Petitions from './Petitions';
 import User from './User';
 import Header from './Header';
 import AddNew from './AddNew';
+import OpenedPetition from './OpenedPetition';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -88,6 +89,9 @@ function App() {
               </Route>
               <Route path="/add-new">
                 <AddNew/>
+              </Route>
+              <Route path="/opened-petition">
+                <OpenedPetition/>
               </Route>
             </Switch>
           </main>
