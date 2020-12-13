@@ -1,0 +1,9 @@
+.petitions__container_title {
+  top: 0;
+  right: 0;
+  background: #F6DD4F;
+  width: 220px;
+  height: 220px;
+  padding: 10px 10px 45px 60px;
+  flex-direction: column;
+}

@@ -10,7 +10,17 @@
 @import url(./styles/blocks/petitions/petitions.css);
 @import url(./styles/blocks/petitions/__item/petitions__item.css);
 @import url(./styles/blocks/petitions/__title/petitions__title.css);
+@import url(./styles/blocks/petitions/__data/petitions__data.css);
+@import url(./styles/blocks/petitions/__rating/petitions__rating.css);
 @import url(./styles/blocks/petitions/__text/petitions__text.css);
+@import url(./styles/blocks/petitions/__container/petitions__container.css);
+@import url(./styles/blocks/petitions/__container/_title/petitions__container_title.css);
+@import url(./styles/blocks/petitions/__container/_rating/petitions__container_rating.css);
+@import url(./styles/blocks/petitions/__image/petitions__image.css);
+@import url(./styles/blocks/flex/flex.css);
+@import url(./styles/blocks/btn/btn.css);
+@import url(./styles/blocks/btn/_like/btn_like.css);
+@import url(./styles/blocks/btn/_dislike/btn_dislike.css);
 @import url(./styles/blocks/user/user.css);
 @import url(./styles/blocks/user/__image/user__image.css);
 @import url(./styles/blocks/user/__title/user__title.css);

@@ -1,0 +1,7 @@
+.petitions__image {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  max-width: 330px;
+  max-height: 155px;
+}
