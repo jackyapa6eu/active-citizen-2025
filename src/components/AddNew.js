@@ -22,7 +22,7 @@ function AddNew() {
     for (let i = 0; i < arr.length; i++) {
       let coincidences = 0;
       for (let j = 0; j < inputArr.length; j++) {
-        if (arr[i].fields.text.toLowerCase().includes(inputArr[j]) && (inputArr[j].length > 2)) {
+        if (arr[i].text.toLowerCase().includes(inputArr[j]) && (inputArr[j].length > 2)) {
           coincidences++;
         }
       }
@@ -57,8 +57,8 @@ function AddNew() {
 
   function translate() {
     const poem = findPoem(poems, inputRef.current.value);
-    setTitle(poem.fields.name);
-    setText(poem.fields.text);
+    setTitle(poem.title);
+    setText(poem.text);
     setisDisabled(false);
   }
 

@@ -5,4 +5,5 @@
   height: 214px;
   box-sizing: border-box;
   overflow-y: scroll;
+  white-space: pre-line;
 }
