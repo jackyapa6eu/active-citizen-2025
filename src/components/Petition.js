@@ -12,7 +12,7 @@ function Petition({petition}) {
   return (
         <div className="petitions__item" onClick={openPetition}>
           <div className="petitions__container petitions__container_title">
-            <h3 className="petitions__title">{petition.poem.fields.name}</h3>
+            <h3 className="petitions__title">{petition.poem.title}</h3>
             <p className="petitions__data">12 декабря 2020</p>
           </div>
           <div className="petitions__container petitions__container_rating">
