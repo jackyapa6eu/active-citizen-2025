@@ -1,0 +1,16 @@
+.sign-in-up-req__btn {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed';
+  width: calc((100% - 30px) / 2);
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

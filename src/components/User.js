@@ -76,28 +76,22 @@ function User() {
       <img className="user__image" src={userImage} alt="изображение с профилями людей"/>
       <h3 className="user__title">ГРАЖДАНИН-ПОЭТ</h3>
       <Switch>
-        <Route path="/user" exact>
-          <div className="user__lobby">
-            <Link to="/user/sign-up"><button class="user__btn">Создать аккаунт</button></Link>
-            <Link to="/user/sign-in"><button class="user__btn user__btn_sing-in">Войти</button></Link>
-          </div>
-        </Route>
         <Route path="/user/sign-up" exact>
           <form className="user__form" onSubmit={signUp}>
-            <input class="user__input" type="text" placeholder="Полное имя" ref={signUpNameInputRef} required/>
-            <input class="user__input" type="email" placeholder="Email" ref={signUpEmailInputRef} required/>
+            <input className="user__input" type="text" placeholder="Полное имя" ref={signUpNameInputRef} required/>
+            <input className="user__input" type="email" placeholder="Email" ref={signUpEmailInputRef} required/>
             {/* <span>{errorMsg}</span> */}
-            <input class="user__input user__input_password" type="password" placeholder="Пароль" ref={signUpPassInputRef} required/>
-            <button class="user__btn" type="submit">Создать аккаунт</button>
+            <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signUpPassInputRef} required/>
+            <button className="user__btn" type="submit">Создать аккаунт</button>
           </form>
           <span className="user__question">Уже есть аккаунт? <Link to="/user/sign-in">Войдите</Link></span>
         </Route>
         <Route path="/user/sign-in" exact>
           <form className="user__form" onSubmit={signIn}>
-            <input class="user__input" type="email" placeholder="Email" ref={signInEmailInputRef} required/>
-            <input class="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
+            <input className="user__input" type="email" placeholder="Email" ref={signInEmailInputRef} required/>
+            <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
             {/* <span>{errorMsg}</span> */}
-            <button class="user__btn" type="submit">Войти</button>          
+            <button className="user__btn" type="submit">Войти</button>          
           </form>
           <span className="user__question">Нет аккаунта? <Link to="/user/sign-up">Регистрация</Link></span>
         </Route>

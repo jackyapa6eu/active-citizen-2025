@@ -1,0 +1,7 @@
+.sign-in-up-req__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
