@@ -48,3 +48,13 @@
 @import url(./styles/blocks/opened-petition/__info/opened-petition__info.css);
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
+@import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);
+@import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
+@import url(./styles/blocks/sign-in-up-req/__info/sign-in-up-req__info.css);
+@import url(./styles/blocks/sign-in-up-req/__title/sign-in-up-req__title.css);
+@import url(./styles/blocks/sign-in-up-req/__description/sign-in-up-req__description.css);
+@import url(./styles/blocks/sign-in-up-req/__buttons/sign-in-up-req__buttons.css);
+@import url(./styles/blocks/sign-in-up-req/__btn/sign-in-up-req__btn.css);
+@import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-in.css);
+@import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-up.css);
+@import url(./styles/blocks/sign-in-up-req/__close-btn/sign-in-up-req__close-btn.css);

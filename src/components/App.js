@@ -13,6 +13,7 @@ import User from './User';
 import Header from './Header';
 import AddNew from './AddNew';
 import OpenedPetition from './OpenedPetition';
+import SignInUpReq from './SignInUpReq';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -28,6 +29,7 @@ firebase.initializeApp(firebaseConfig);
 function App() {
   const [petitions, setPetitions] = React.useState([]);
   const [user, setUser] = React.useState({});
+  const [isReqOpened, setIsReqOpened] = React.useState(true);
   React.useEffect(() => {
     authUser();
     getPetitions();
@@ -70,9 +72,13 @@ function App() {
       }
       const obj = snapshot.val();
       setUser(obj);
+      setIsReqOpened(true);
     })
   }
 
+  function closeRequest() {
+    setIsReqOpened(false);
+  }
 
   return (
     <div className="App">
@@ -82,6 +88,7 @@ function App() {
           <main className="main">
             <Switch>
               <Route exact path="/">
+                {(!user.uid && isReqOpened) && <SignInUpReq closeRequest={closeRequest}/>}
                 <Petitions petitions={petitions}/>
               </Route>
               <Route path="/user">

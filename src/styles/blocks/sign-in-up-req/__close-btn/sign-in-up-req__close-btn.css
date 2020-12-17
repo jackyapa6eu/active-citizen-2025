@@ -1,0 +1,15 @@
+.sign-in-up-req__close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: url(../../../images/sign-in-up-req__close-btn.png);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

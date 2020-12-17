@@ -1,0 +1,6 @@
+.sign-in-up-req__btn_sign-in {
+  color: black;
+  border: 2px solid #8E4FF6;
+  border-image: linear-gradient(to right, #8E4FF6, #4F92F6);
+  border-image-slice: 1;
+}

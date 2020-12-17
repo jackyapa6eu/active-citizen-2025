@@ -1,0 +1,9 @@
+.sign-in-up-req__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+}

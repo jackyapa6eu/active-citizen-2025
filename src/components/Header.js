@@ -25,8 +25,8 @@ function Header({setUser}) {
   return (
     <header className="header">
       <Link to="/"><img className="header__logo"src={headerLogo} alt="Логотип Гражданин-поэт"/></Link>
-      {user.uid ? <div><span>{user.name}  </span><span onClick={signOut}>  выход</span></div> : <Link to="/user" class="header__user">пользователь</Link>}  
-      <button className="header__add-btn" onClick={openAddNew}>Добавить</button>
+      {user.uid && <div><span>{user.name}  </span><span onClick={signOut}>  выход</span></div>}  
+      {user.uid && <button className="header__add-btn" onClick={openAddNew}>Разместить</button>}
     </header>
   );
 }
