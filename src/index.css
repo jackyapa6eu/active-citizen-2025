@@ -18,6 +18,10 @@
 @import url(./styles/blocks/petitions/__container/_title/petitions__container_title.css);
 @import url(./styles/blocks/petitions/__container/_rating/petitions__container_rating.css);
 @import url(./styles/blocks/petitions/__image/petitions__image.css);
+@import url(./styles/blocks/petitions/__item/_type/petitions__item_type_culture.css);
+@import url(./styles/blocks/petitions/__item/_type/petitions__item_type_politics.css);
+@import url(./styles/blocks/petitions/__item/_type/petitions__item_type_social.css);
+@import url(./styles/blocks/petitions/__item/_type/petitions__item_type_transport.css);
 @import url(./styles/blocks/flex/flex.css);
 @import url(./styles/blocks/btn/btn.css);
 @import url(./styles/blocks/btn/_like/btn_like.css);

@@ -2,6 +2,6 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  max-width: 330px;
-  max-height: 155px;
+  width: calc(100% - 20px);
+  height: 44%;
 }
