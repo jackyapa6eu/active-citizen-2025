@@ -18,7 +18,7 @@ function SignInUpReq({closeRequest}) {
         </p>
         <div className="sign-in-up-req__buttons">
           <Link to="/user/sign-in" className="sign-in-up-req__btn sign-in-up-req__btn_sign-in" type="button">Войти</Link>
-          <Link to="/user/sign-up" className="sign-in-up-req__btn sign-in-up-req__btn_sign-up" type="button">Регистрация</Link>
+          <Link to="/user/sign-up" className="button sign-in-up-req__btn sign-in-up-req__btn_sign-up" type="button">Регистрация</Link>
         </div>
       </div>
     </section>
