@@ -14,6 +14,8 @@ import Header from './Header';
 import AddNew from './AddNew';
 import OpenedPetition from './OpenedPetition';
 import SignInUpReq from './SignInUpReq';
+import Feed from './Feed';
+import Categories from './Categories';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -94,7 +96,7 @@ function App() {
             <Switch>
               <Route exact path="/">
                 {(!user.uid && isReqOpened) && <SignInUpReq closeRequest={closeRequest}/>}
-                <Petitions petitions={petitions} showDate={showDate}/>
+                <Feed petitions={petitions} showDate={showDate}/>
               </Route>
               <Route path="/user">
                 <User/>

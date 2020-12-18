@@ -1,0 +1,20 @@
+.categories__item {
+  background: #8E9295;
+  height: 50px;
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all .5s ease;
+  color: white;
+}
+
+.categories__item:hover {
+  height: 100%;
+}

@@ -1,6 +1,6 @@
 .petitions {
   max-width: 100%;
-  margin: 40px auto 94px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 350px);
   grid-template-rows: repeat(auto-fill, 350px);
