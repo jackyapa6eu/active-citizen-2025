@@ -21,7 +21,6 @@ function OpenedPetition({showDate}) {
     const cheatSheetRef = firebase.database().ref('petitions/' + pId);
     cheatSheetRef.once('value', (snapshot) => {
       if (snapshot.val() === null) {
-        console.log('НИЧЕГО НЕТ');
         //setSetNotFound(true);
         //hideLoader();
         return
