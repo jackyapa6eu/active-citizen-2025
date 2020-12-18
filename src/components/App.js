@@ -94,7 +94,7 @@ function App() {
             <Switch>
               <Route exact path="/">
                 {(!user.uid && isReqOpened) && <SignInUpReq closeRequest={closeRequest}/>}
-                <Petitions petitions={petitions}/>
+                <Petitions petitions={petitions} showDate={showDate}/>
               </Route>
               <Route path="/user">
                 <User/>

@@ -1,9 +1,29 @@
 .petitions__container_title {
   top: 0;
   right: 0;
-  background: #F6DD4F;
+  background: #8E9295;
   width: 220px;
   height: 220px;
   padding: 10px 10px 45px 60px;
   flex-direction: column;
+}
+
+.petitions__item_type_culture .petitions__container_title {
+  background: #F66D4F;
+  color: black;
+}
+
+.petitions__item_type_politics .petitions__container_title {
+  background: #4F92F6;
+  color: white;
+}
+
+.petitions__item_type_social .petitions__container_title {
+  background: #F6DD4F;
+  color: black;
+}
+
+.petitions__item_type_transport .petitions__container_title {
+  background: #8E4FF6;
+  color: white;
 }

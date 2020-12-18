@@ -6,3 +6,19 @@
   height: 30px;
   padding: 0 10px;
 }
+
+.petitions__item_type_culture .petitions__container_rating {
+  background:#C12B0A;
+}
+
+.petitions__item_type_politics .petitions__container_rating {
+  background:#08439B;
+}
+
+.petitions__item_type_social .petitions__container_rating {
+  background:#C1A60A;
+}
+
+.petitions__item_type_transport .petitions__container_rating {
+  background: #500AC1;
+}
