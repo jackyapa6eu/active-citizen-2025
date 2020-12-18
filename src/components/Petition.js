@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 
 function Petition({petition, showDate}) {
-  console.log(petition);
   const history = useHistory();
   const [likes, setLikes] = React.useState([]);
   const [disLikes, setDisLikes] = React.useState([]);
