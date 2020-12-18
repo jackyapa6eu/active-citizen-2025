@@ -80,6 +80,11 @@ function App() {
     setIsReqOpened(false);
   }
 
+  function showDate(date) {
+    let day = new Date(date);
+    return `${day.toLocaleString('ru',{day: 'numeric', month: 'long', year: 'numeric'}).replace('г.', '')}`
+}
+
   return (
     <div className="App">
       <UserContext.Provider value={user}>
@@ -97,8 +102,8 @@ function App() {
               <Route path="/add-new">
                 <AddNew/>
               </Route>
-              <Route path="/opened-petition">
-                <OpenedPetition/>
+              <Route path="/petitions/:pId">
+                <OpenedPetition showDate={showDate}/>
               </Route>
             </Switch>
           </main>

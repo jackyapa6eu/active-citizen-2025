@@ -8,6 +8,22 @@
   padding-top: 10px;
   width: 351px;
   min-height: 351px;
-  background: #8E4FF6;
+  background: #8E9295;
   z-index: 1;
+}
+
+.opened-petition_type_culture .opened-petition__info {
+  background: #F66D4F;
+}
+
+.opened-petition_type_politics .opened-petition__info {
+  background: #4F92F6;
+}
+
+.opened-petition_type_social .opened-petition__info {
+  background: #F6DD4F;
+}
+
+.opened-petition_type_transport .opened-petition__info{
+  background: #8E4FF6;
 }

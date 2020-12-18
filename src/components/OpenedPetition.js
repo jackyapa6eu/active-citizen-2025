@@ -1,26 +1,65 @@
 import React from 'react';
+import { useParams } from 'react-router';
+import firebase from 'firebase/app';
+import "firebase/auth";
+import "firebase/database";
+import UserContext from '../contexts/UserContext';
 
-function OpenedPetition() {
+
+function OpenedPetition({showDate}) {
+  const { pId } = useParams();
+  const user = React.useContext(UserContext);
+  const [text, setText] = React.useState('');
+  const [title, setTitle] = React.useState('');
+  const [author, setAuthor] = React.useState('');
+  const [likes, setLikes] = React.useState([]);
+  const [disLikes, setDisLikes] = React.useState([]);
+  const [imgUrl, setImgUrl] = React.useState('');
+  const [date, setDate] = React.useState('');
+  const [category, setCategory] = React.useState('');
+  React.useEffect(() => { 
+    const cheatSheetRef = firebase.database().ref('petitions/' + pId);
+    cheatSheetRef.once('value', (snapshot) => {
+      if (snapshot.val() === null) {
+        console.log('НИЧЕГО НЕТ');
+        //setSetNotFound(true);
+        //hideLoader();
+        return
+      }
+      const obj = snapshot.val();
+      setText(obj.poem.text);
+      setTitle(obj.poem.title);
+      setAuthor(obj.author);
+      setImgUrl(obj.imgLink);
+      setDate(showDate(obj.date));
+      setCategory(obj.category);
+      obj.likes ? setLikes(obj.likes) : setLikes([]);
+      obj.disLikes ? setDisLikes(obj.disLikes) : setDisLikes([]);
+    }); 
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  
+
   return (
-    <article className="opened-petition">
+    <article className={`opened-petition opened-petition_type_${category}`}>
       <div className="opened-petition__info">
         <h3 className="opened-petition__title">
-          {'Мизиз...\nЗынь...\nИцив - \nЗима!..'}
+          {title}
         </h3>
         <span className="opened-petition__date">
-          07 декабря 2020
+          {date}
         </span>
       </div>
       <p className="opened-petition__text">
-        {'Мизиз... \nЗынь... \nИцив - Зима!.. \nЗамороженные \nСтень Стынь... \nСнегота... Снегота!..\nСтужа... вьюжа... \nВью-ю-ю-га - сту-у-у-га...'}
+        {text}
       </p>
-      <div className="opened-petition__image">
+      <div className="opened-petition__image" style={{backgroundImage: 'url(' + imgUrl + ')',}}>
         <div className="opened-petition__reactions">
-          <button type="button" className="opened-petition__reactions-item">2454</button>
-          <button type="button" className="opened-petition__reactions-item">1454</button>
+          <button type="button" className="opened-petition__reactions-item">{likes.length}</button>
+          <button type="button" className="opened-petition__reactions-item">{disLikes.length}</button>
         </div>
       </div>
-      <span className="opened-petition__author">ID#222222</span>
+      <span className="opened-petition__author">{author}</span>
     </article>
   );
 }

@@ -14,5 +14,6 @@
   bottom: 0;
   width: 160px;
   height: 160px;
-  background: rgba(142, 79, 246, .5);
+  background: #8E9295;
+  opacity: .5;
 }

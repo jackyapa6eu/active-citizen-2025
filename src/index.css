@@ -46,6 +46,10 @@
 @import url(./styles/blocks/opened-petition/__reactions-item/opened-petition__reactions-item.css);
 @import url(./styles/blocks/opened-petition/__author/opened-petition__author.css);
 @import url(./styles/blocks/opened-petition/__info/opened-petition__info.css);
+@import url(./styles/blocks/opened-petition/_type/opened-petition_type_culture.css);
+@import url(./styles/blocks/opened-petition/_type/opened-petition_type_politics.css);
+@import url(./styles/blocks/opened-petition/_type/opened-petition_type_social.css);
+@import url(./styles/blocks/opened-petition/_type/opened-petition_type_transport.css);
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
 @import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);

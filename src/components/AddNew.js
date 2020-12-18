@@ -42,7 +42,7 @@ function AddNew() {
       likes: [],
       dislikes: [],
       category: 'all',
-      date: 'date',
+      date: getCurrentDate(),
       imgLink: 'https://images.unsplash.com/photo-1518118573785-ce95d300a48a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
       author: user.name
     };
@@ -61,6 +61,29 @@ function AddNew() {
     setText(poem.text);
     setisDisabled(false);
   }
+
+  function getCurrentDate() {
+    let today = (new Date);
+    let metka = today.getTime();
+    return metka
+}
+
+
+function getMaxLength() {
+  let maxStrLength = 0;
+  for (let i = 0; i < poems.length; i++) {
+    const strArr = poems[i].text.split('\n');
+    for (let j = 0; j < strArr.length; j++) {
+      if (strArr[j].length > maxStrLength) {
+        maxStrLength = strArr[j].length;
+        console.log(strArr[j], i);
+      }
+    }
+  }
+  console.log(maxStrLength);
+}
+
+//getMaxLength();
 
   return (
     <section className="add-new">

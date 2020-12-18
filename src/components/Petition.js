@@ -7,7 +7,7 @@ import {
 function Petition({petition}) {
   const history = useHistory();
   function openPetition() {
-    history.push("/opened-petition");
+    history.push(`/petitions/${petition.id}`);
   }
   return (
         <div className="petitions__item" onClick={openPetition}>

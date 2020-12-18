@@ -1,7 +1,23 @@
 .opened-petition__reactions {
   position: absolute;
-  background: green;
+  background: #8E9295;
   left: 0;
   top: -58px;
   height: 36px;
+}
+
+.opened-petition_type_culture .opened-petition__reactions {
+  background:#C12B0A;
+}
+
+.opened-petition_type_politics .opened-petition__reactions {
+  background:#08439B;
+}
+
+.opened-petition_type_social .opened-petition__reactions {
+  background:#C1A60A;
+}
+
+.opened-petition_type_transport .opened-petition__reactions {
+  background: #500AC1;
 }
