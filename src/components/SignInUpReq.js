@@ -11,10 +11,10 @@ function SignInUpReq({closeRequest}) {
       <img className="sign-in-up-req__image" src={image} alt=""/>
       <div className="sign-in-up-req__info">
         <h1 className="sign-in-up-req__title">
-          {'Первое сообщество\n активных граждан\n для публикации\n поэтических обращений'}
+          {'Первый портал активных\nграждан для размещения\nпоэтических публикаций'}
         </h1>
         <p className="sign-in-up-req__description">
-          {'Регистрируйся, создавай cобственную\n инициативу и получай поддержку\n активных граждан со всей страны.'}
+          {'Регистрируйся, размещай собственные\nпубликации и получай реакцию\nактивных граждан со всей страны.'}
         </p>
         <div className="sign-in-up-req__buttons">
           <Link to="/user/sign-in" className="sign-in-up-req__btn sign-in-up-req__btn_sign-in" type="button">Войти</Link>

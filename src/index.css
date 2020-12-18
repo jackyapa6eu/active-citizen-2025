@@ -70,6 +70,7 @@
 @import url(./styles/blocks/opened-petition/_type/opened-petition_type_transport.css);
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
+@import url(./styles/blocks/opened-petition/__curcle/opened-petition__curcle.css);
 @import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);
 @import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
 @import url(./styles/blocks/sign-in-up-req/__info/sign-in-up-req__info.css);
