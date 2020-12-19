@@ -1,7 +1,6 @@
 .opened-petition__info {
   display: flex;
   flex-direction: column;
-  text-align: center;
   position: absolute;
   right: 0;
   top: 0;
@@ -10,6 +9,9 @@
   min-height: 351px;
   background: #8E9295;
   z-index: 1;
+  padding: 10px 10px 10px 45px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .opened-petition_type_culture .opened-petition__info {

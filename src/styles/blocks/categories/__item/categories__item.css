@@ -12,7 +12,11 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all .5s ease;
-  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 140%;
+  color: #FDFDFD;
 }
 
 .categories__item:hover {

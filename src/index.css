@@ -6,8 +6,12 @@
 @import url(./styles/blocks/header/__logo/header__logo.css);
 @import url(./styles/blocks/header/__user/header__user.css);
 @import url(./styles/blocks/header/__add-btn/header__add-btn.css);
+@import url(./styles/blocks/header/__button-container/header__button-container.css);
 @import url(./styles/blocks/main/main.css);
 @import url(./styles/blocks/footer/footer.css);
+@import url(./styles/blocks/button/button.css);
+@import url(./styles/blocks/button/_white/button_white.css);
+@import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
 @import url(./styles/blocks/categories/categories.css);
 @import url(./styles/blocks/categories/__item/categories__item.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_all.css);
@@ -35,6 +39,9 @@
 @import url(./styles/blocks/btn/_like/btn_like.css);
 @import url(./styles/blocks/btn/_dislike/btn_dislike.css);
 @import url(./styles/blocks/user/user.css);
+@import url(./styles/blocks/user/_sign/user_sign.css);
+@import url(./styles/blocks/user/__container/user__container.css);
+@import url(./styles/blocks/user/__box/user__box.css);
 @import url(./styles/blocks/user/__image/user__image.css);
 @import url(./styles/blocks/user/__title/user__title.css);
 @import url(./styles/blocks/user/__lobby/user__lobby.css);
@@ -42,8 +49,7 @@
 @import url(./styles/blocks/user/__question/user__question.css);
 @import url(./styles/blocks/user/__input/user__input.css);
 @import url(./styles/blocks/user/__input/_password/user__input_password.css);
-@import url(./styles/blocks/user/__btn/user__btn.css);
-@import url(./styles/blocks/user/__btn/_sing-in/user__btn_sing-in.css);
+@import url(./styles/blocks/user/__button/user__button.css);
 @import url(./styles/blocks/add-new/add-new.css);
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
 @import url(./styles/blocks/add-new/__form/add-new__form.css);
@@ -64,6 +70,7 @@
 @import url(./styles/blocks/opened-petition/_type/opened-petition_type_transport.css);
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
+@import url(./styles/blocks/opened-petition/__curcle/opened-petition__curcle.css);
 @import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);
 @import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
 @import url(./styles/blocks/sign-in-up-req/__info/sign-in-up-req__info.css);

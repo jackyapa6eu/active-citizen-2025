@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from 'firebase/app';
 import "firebase/auth";
-import userImage from '../styles/images/user__image.png';
+import image from '../styles/images/SignInUpReq__image.png'
 import {
   Switch,
   Route,
@@ -72,28 +72,36 @@ function User() {
   }
 
   return (
-    <section className="user">
-      <img className="user__image" src={userImage} alt="изображение с профилями людей"/>
-      <h3 className="user__title">ГРАЖДАНИН-ПОЭТ</h3>
+    <section className="user user_sign">
+      <img className="user__image" src={image} alt=""/>
       <Switch>
         <Route path="/user/sign-up" exact>
-          <form className="user__form" onSubmit={signUp}>
-            <input className="user__input" type="text" placeholder="Полное имя" ref={signUpNameInputRef} required/>
-            <input className="user__input" type="email" placeholder="Email" ref={signUpEmailInputRef} required/>
-            {/* <span>{errorMsg}</span> */}
-            <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signUpPassInputRef} required/>
-            <button className="user__btn" type="submit">Создать аккаунт</button>
-          </form>
-          <span className="user__question">Уже есть аккаунт? <Link to="/user/sign-in">Войдите</Link></span>
+          <div class="user__container">
+            <div class="user__box">
+              <form className="user__form" onSubmit={signUp}>
+                <input className="user__input" type="text" placeholder="Имя" ref={signUpNameInputRef} required/>
+                <input className="user__input" type="text" placeholder="Фамилия" ref={signUpNameInputRef} required/>
+                <input className="user__input" type="email" placeholder="Email" ref={signUpEmailInputRef} required/>
+                <span>{errorMsg}</span>
+                <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signUpPassInputRef} required/>
+                <button className="button user__button" type="submit">Создать аккаунт</button>
+              </form>
+              <span className="user__question">Уже есть аккаунт? <Link to="/user/sign-in">Войдите</Link></span>
+            </div>
+          </div>
         </Route>
         <Route path="/user/sign-in" exact>
-          <form className="user__form" onSubmit={signIn}>
-            <input className="user__input" type="email" placeholder="Email" ref={signInEmailInputRef} required/>
-            <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
-            {/* <span>{errorMsg}</span> */}
-            <button className="user__btn" type="submit">Войти</button>          
-          </form>
-          <span className="user__question">Нет аккаунта? <Link to="/user/sign-up">Регистрация</Link></span>
+          <div class="user__container">
+            <div class="user__box">
+              <form className="user__form" onSubmit={signIn}>
+                <input className="user__input" type="email" placeholder="Email" ref={signInEmailInputRef} required/>
+                <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
+                <span>{errorMsg}</span>
+                <button className="button user__button" type="submit">Войти</button>          
+              </form>
+              <span className="user__question">Нет аккаунта? <Link to="/user/sign-up">Регистрация</Link></span>
+            </div>
+          </div>
         </Route>
       </Switch>
 
