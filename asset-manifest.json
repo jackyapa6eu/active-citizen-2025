@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.2266256b.chunk.css",
-    "main.js": "./static/js/main.63a80b80.chunk.js",
-    "main.js.map": "./static/js/main.63a80b80.chunk.js.map",
+    "main.css": "./static/css/main.57a245eb.chunk.css",
+    "main.js": "./static/js/main.d71c9815.chunk.js",
+    "main.js.map": "./static/js/main.d71c9815.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.9b4faa0c.js",
     "runtime-main.js.map": "./static/js/runtime-main.9b4faa0c.js.map",
     "static/js/2.1c8266dd.chunk.js": "./static/js/2.1c8266dd.chunk.js",
@@ -10,18 +10,16 @@
     "static/js/3.54580a24.chunk.js": "./static/js/3.54580a24.chunk.js",
     "static/js/3.54580a24.chunk.js.map": "./static/js/3.54580a24.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.2266256b.chunk.css.map": "./static/css/main.2266256b.chunk.css.map",
+    "static/css/main.57a245eb.chunk.css.map": "./static/css/main.57a245eb.chunk.css.map",
     "static/js/2.1c8266dd.chunk.js.LICENSE.txt": "./static/js/2.1c8266dd.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/opened-petition__image.bf8994d9.png",
     "static/media/SignInUpReq__image.342169bf.png": "./static/media/SignInUpReq__image.342169bf.png",
-    "static/media/header__logo.0e1d697a.png": "./static/media/header__logo.0e1d697a.png",
-    "static/media/image1.d73950d3.png": "./static/media/image1.d73950d3.png",
-    "static/media/user__image.61c123db.png": "./static/media/user__image.61c123db.png"
+    "static/media/header__logo.0e1d697a.png": "./static/media/header__logo.0e1d697a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9b4faa0c.js",
     "static/js/2.1c8266dd.chunk.js",
-    "static/css/main.2266256b.chunk.css",
-    "static/js/main.63a80b80.chunk.js"
+    "static/css/main.57a245eb.chunk.css",
+    "static/js/main.d71c9815.chunk.js"
   ]
 }
