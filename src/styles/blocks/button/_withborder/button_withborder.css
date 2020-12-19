@@ -1,0 +1,9 @@
+.button_withborder {
+  background-image: none;
+  background-color: white;
+  border: 2px solid transparent;
+  border-image: linear-gradient(89.87deg, #8E4FF6 26.68%, #4F92F6 92.81%);
+  border-image-slice: 1;
+  color: #101010;
+  padding: 0 20px;
+}

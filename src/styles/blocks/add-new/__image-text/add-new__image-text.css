@@ -1,0 +1,11 @@
+.add-new__image-text {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% - 120px);
+  font-family: 'Lora', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #8E9295;
+  padding: 0 20px;
+  text-align: center;
+}

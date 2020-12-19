@@ -3,6 +3,7 @@ import poems from '../utils/poems';
 import firebase from 'firebase/app';
 import "firebase/database";
 import UserContext from '../contexts/UserContext';
+import addImageButton from '../styles/images/add-new__image-btn.svg';
 import {
   useHistory
 } from "react-router-dom";
@@ -87,15 +88,23 @@ function getMaxLength() {
 
   return (
     <section className="add-new">
-      <div className="add-new__image"/>
+      <h2 className="add-new__title">Как разместить публикацию через портал ГРАЖДАНИН-ПОЭТ:</h2>
+      <ol className="add-new__direction">
+        <li className="add-new__item">Выберите наиболее подходящую к вашей публикации категорию из списка.</li>
+        <li className="add-new__item">Коротко опишите суть своей публикации. Нажмите&nbsp;“Перевести”, чтобы увидеть ваш текст на языке поэзии.</li>
+        <li className="add-new__item">Чтобы добавить фото, нажмите на <img className="add-new__item-image" src={addImageButton} alt="#"></img> Фото&nbsp;пройдёт&nbsp;моментальную модерацию.</li>
+        <li className="add-new__item">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</li>
+      </ol>
+
       <form className="add-new__form" onSubmit={handleSubmit}>
-        <input className="add-new__input" type="text" ref={inputRef}/>
+        <input className="add-new__input" type="text" placeholder="Введите свой запрос" ref={inputRef} required />
         <h3 className="add-new__poem-title">{title}</h3>
-        <p className="add-new__poem-text">{text}</p>
-        <div className="add-new__btns-wrapper">
-          <button type="button" className="petition-form__submit-btn" onClick={translate}>Перевести</button>
-          <button type="submit" disabled={isDisabled}>Опубликовать</button>
+        <div className="add-new__image">
+          <p className="add-new__image-text">Изображение публикации</p>
         </div>
+        <p className="add-new__poem-text">{text}</p>
+        <button className="button button_withborder" type="button" onClick={translate}>Перевести</button>
+        <button className="button" type="submit" disabled={isDisabled}>Разместить</button>
       </form>
     </section>
   );

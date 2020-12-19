@@ -1,9 +1,10 @@
 .opened-petition__reactions {
-  position: absolute;
   background: #8E9295;
-  left: 0;
-  top: -58px;
-  height: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 40px;
+  height: 35px;
+  padding: 0 10px;
 }
 
 .opened-petition_type_culture .opened-petition__reactions {

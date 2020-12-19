@@ -1,17 +1,10 @@
 .opened-petition__info {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding-top: 10px;
-  width: 351px;
-  min-height: 351px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: max-content;
   background: #8E9295;
-  z-index: 1;
-  padding: 10px 10px 10px 45px;
-  box-sizing: border-box;
-  text-align: left;
+  padding: 10px 10px 50px 10px;
+  font-family: 'Lora', sans-serif;
 }
 
 .opened-petition_type_culture .opened-petition__info {
@@ -28,4 +21,5 @@
 
 .opened-petition_type_transport .opened-petition__info{
   background: #8E4FF6;
+  color: #FDFDFD;
 }
