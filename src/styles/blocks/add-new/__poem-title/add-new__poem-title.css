@@ -1,8 +1,8 @@
 .add-new__poem-title {
-  width: 47.2%;
-  border: solid 1px black;
-  height: 100px;
+  grid-column: 3/5;
+  grid-row: 1/2;
+  border: 2px solid #8E9295;
   margin: 0;
+  padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }

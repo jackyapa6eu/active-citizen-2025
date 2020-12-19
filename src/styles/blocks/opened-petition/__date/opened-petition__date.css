@@ -1,6 +1,6 @@
 .opened-petition__date {
-  font-family: 'Lora', sans-serif;
+  align-self: end;
+  justify-self: end;
   font-size: 20px;
   line-height: 120%;
-  color: #FDFDFD;
 }

@@ -1,9 +1,7 @@
 .opened-petition__text {
-  max-width: 445px;
-  white-space: pre-line;
-  font-family: 'Lora', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 140%;
-  margin-left: -40px;
+  white-space: pre-line;
+  margin: 0;
 }
