@@ -1,5 +1,4 @@
 import React from 'react';
-import petitionImage from '../styles/images/image1.png';
 import {
   useHistory
 } from "react-router-dom";

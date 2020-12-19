@@ -4,6 +4,7 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/database";
 import UserContext from '../contexts/UserContext';
+import imageCurcle from '../styles/images/ellipse.png';
 
 
 function OpenedPetition({showDate}) {
@@ -41,6 +42,7 @@ function OpenedPetition({showDate}) {
 
   return (
     <article className={`opened-petition opened-petition_type_${category}`}>
+      <img className="opened-petition__curcle"src={imageCurcle} alt=""/>
       <div className="opened-petition__info">
         <h3 className="opened-petition__title">
           {title}

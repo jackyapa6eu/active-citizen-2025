@@ -1,5 +1,5 @@
 .user__input {
-  background: #F4F4F4;
+  background: #FDFDFD;
   border: none;
 
   font-family: 'Lora', sans-serif;
@@ -7,4 +7,5 @@
   line-height: 140%;
   color: #8E9295;
   padding: 14px 20px;
+  margin-bottom: 20px;
 }
