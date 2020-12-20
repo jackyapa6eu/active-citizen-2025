@@ -1,4 +1,8 @@
 .petitions__data {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
+  align-self: flex-end;
   font-family: 'Lora', sans-serif;
   font-size: 14px;
   line-height: 120%;
