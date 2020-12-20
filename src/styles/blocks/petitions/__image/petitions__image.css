@@ -4,4 +4,6 @@
   left: 10px;
   width: calc(100% - 20px);
   height: 44%;
+  object-fit: cover;
+  object-position: center;
 }
