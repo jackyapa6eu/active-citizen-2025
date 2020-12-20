@@ -19,19 +19,21 @@ function Petition({petition, showDate}) {
         <div className={`petitions__item petitions__item_type_${petition.category}`} onClick={openPetition}>
           <div className="petitions__container petitions__container_title">
             <h3 className="petitions__title">{petition.poem.title}</h3>
-            <p className="petitions__data">{showDate(petition.date)}</p>
-          </div>
-          <div className="petitions__container petitions__container_rating">
-            <div className="flex">
-              <button className="btn btn_like"></button>
-              <p className="petitions__rating">{likes.length}</p>
+            <div className="petitions__container petitions__container_rating">
+                <div className="flex">
+                  <button className="btn btn_like"></button>
+                  <p className="petitions__rating">{likes.length}</p>
+                </div>
+                <div className="flex">
+                  <button className="btn btn_dislike"></button>
+                  <p className="petitions__rating">{disLikes.length}</p>
+                </div>
             </div>
-            <div className="flex">
-              <button className="btn btn_dislike"></button>
-              <p className="petitions__rating">{disLikes.length}</p>
-            </div>
+            <span className="petitions__data">{showDate(petition.date)}</span>
           </div>
+
           <img src={petition.imgLink} alt="" className="petitions__image"/>
+
         </div>
         )
 }
