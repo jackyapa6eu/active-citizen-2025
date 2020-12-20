@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .add-new__image:before {
@@ -22,6 +25,7 @@
   background-size: cover;
   opacity: .7;
   transition: all .5s ease;
+  cursor: pointer;
 }
 
 .add-new__image:hover.add-new__image::before {
