@@ -109,7 +109,6 @@ function App() {
               </Route>
             </Switch>
           </main>
-          <footer className="footer">footer</footer>
         </div>
       </UserContext.Provider>
     </div>

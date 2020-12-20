@@ -1,6 +1,5 @@
 .opened-petition__date {
-  align-self: end;
-  justify-self: end;
-  font-size: 20px;
-  line-height: 120%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
 }

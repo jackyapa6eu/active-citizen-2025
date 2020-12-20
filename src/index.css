@@ -95,6 +95,7 @@
 @import url(./styles/blocks/opened-petition/_type/opened-petition_type_transport.css);
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
+@import url(./styles/blocks/opened-petition/__block/opened-petition__block.css);
 @import url(./styles/blocks/opened-petition/__curcle/opened-petition__curcle.css);
 @import url(./styles/blocks/opened-petition/__rating/opened-petition__rating.css);
 @import url(./styles/blocks/opened-petition/__container/opened-petition__container.css);

@@ -44,9 +44,11 @@ function OpenedPetition({showDate}) {
 
     <article className={`opened-petition opened-petition_type_${category}`}>
       <div className="opened-petition__info">
-        <h3 className="opened-petition__title">{title}</h3>
         <p className="opened-petition__text">{text}</p>
-        <span className="opened-petition__date">{date}</span>
+        <div className="opened-petition__block">
+          <h3 className="opened-petition__title">{title}</h3>
+          <span className="opened-petition__date">{date}</span>
+        </div>
       </div>
       <div className="opened-petition__image" style={{backgroundImage: 'url(' + imgUrl + ')',}}></div>
       <div className="opened-petition__container">
