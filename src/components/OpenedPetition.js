@@ -33,7 +33,7 @@ function OpenedPetition({showDate}) {
       setDate(showDate(obj.date));
       setCategory(obj.category);
       obj.likes ? setLikes(obj.likes) : setLikes([]);
-      obj.disLikes ? setDisLikes(obj.disLikes) : setDisLikes([]);
+      obj.dislikes ? setDisLikes(obj.dislikes) : setDisLikes([]);
     }); 
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
