@@ -2,19 +2,47 @@ import React from 'react';
 import poems from '../utils/poems';
 import firebase from 'firebase/app';
 import "firebase/database";
+import "firebase/storage";
 import UserContext from '../contexts/UserContext';
 import addImageButton from '../styles/images/add-new__image-btn.svg';
+import Categories from './Categories';
 import {
   useHistory
 } from "react-router-dom";
+import classNames from 'classnames';
 
 function AddNew() {
   const user = React.useContext(UserContext);
   const inputRef = React.useRef();
+  const fileInputRef = React.useRef();
   const [title, setTitle] = React.useState('');
   const [text, setText] = React.useState('');
   const [isDisabled, setisDisabled] = React.useState(true);
+  const [newPetitionKey, setNewPetitionKey] = React.useState('');
+  const [newPetitionImg, setNewPetitionImg] = React.useState('');
+  const [selectedCategory, setSelectedCategory] = React.useState('all');
   const history = useHistory();
+
+  const buttonSelectors = classNames(
+    'button',
+    {
+      'button_disabled': isDisabled
+    }
+  )
+
+  const addNewImageSelectors = classNames(
+    'add-new__image',
+    {
+      'add-new__image_loaded': newPetitionImg != '',
+    }
+  )
+
+  React.useEffect(() => {
+    setNewPetitionKey(firebase.database().ref().child('petition').push().key);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  React.useEffect(() => {
+    checkPetitionData();
+  }, [title, text, newPetitionImg, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function findPoem(arr, str) {
     let inputArr = str.trim().split(' ');
@@ -35,21 +63,18 @@ function AddNew() {
     return result
   }
   function handleSubmit(event) {
-    console.log('handlesubmit');
     event.preventDefault(); 
     var petitionData = {
       realText: inputRef.current.value,
       poem: findPoem(poems, inputRef.current.value),
       likes: [],
       dislikes: [],
-      category: 'all',
+      category: selectedCategory,
       date: getCurrentDate(),
-      imgLink: 'https://images.unsplash.com/photo-1518118573785-ce95d300a48a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      imgLink: newPetitionImg,
       author: user.name
     };
-    
-    var newPetitionKey = firebase.database().ref().child('petition').push().key;
-  
+
     var updates = {};
     updates['/petitions/' + newPetitionKey] = petitionData;
     setTimeout(() => history.push('/'), 1000)
@@ -60,7 +85,6 @@ function AddNew() {
     const poem = findPoem(poems, inputRef.current.value);
     setTitle(poem.title);
     setText(poem.text);
-    setisDisabled(false);
   }
 
   function getCurrentDate() {
@@ -68,24 +92,74 @@ function AddNew() {
     let metka = today.getTime();
     return metka
 }
+  function previewFiles() {
+    if (fileInputRef.current.files.length === 0) {
+      setNewPetitionImg('');
+      return
+    }
+    const storageRef = firebase.storage().ref();
+    let file = fileInputRef.current.files[0];
+    let name = newPetitionKey;
+    storageRef.child(name).put(file).then(function(snapshot) {
+        snapshot.ref.getDownloadURL().then(function(downloadURL) {
+            setNewPetitionImg(downloadURL);
+        })
+    }); 
+  }
 
-
+  function checkPetitionData() {
+    const regExp = /https?:\/\/w{0,3}[a-z0-9-._~:/?#[\]@!$&'()*+,;=]*#?/gi;
+    if (text === '' || title === '' || inputRef.current.value.length < 3 || !regExp.test(newPetitionImg) || selectedCategory === 'all') {
+      setisDisabled(true);
+    } else {
+      setisDisabled(false);
+    }
+  }
+/*
 function getMaxLength() {
   let maxStrLength = 0;
+  let moreThenFifty = 0;
+  let moreThenSixty = 0;
+  let moreThenSeventy = 0;
+  let moreThenEighty = 0;
+  let moreThenNinety = 0;
   for (let i = 0; i < poems.length; i++) {
     const strArr = poems[i].text.split('\n');
     for (let j = 0; j < strArr.length; j++) {
+
+      if (strArr[j].length > 50) {
+        moreThenFifty++;
+      }
+      if (strArr[j].length > 60) {
+        moreThenSixty++;
+      }
+      if (strArr[j].length > 70) {
+        moreThenSeventy++;
+      }
+      if (strArr[j].length > 80) {
+        moreThenEighty++;
+      }
+      if (strArr[j].length > 90) {
+        moreThenNinety++;
+      }
+
       if (strArr[j].length > maxStrLength) {
         maxStrLength = strArr[j].length;
         console.log(strArr[j], i);
       }
     }
   }
-  console.log(maxStrLength);
+  console.log(poems.length);
+  console.log('Количество строк, длинна которых');
+  console.log('>50', moreThenFifty);
+  console.log('>60', moreThenSixty);
+  console.log('>70', moreThenSeventy);
+  console.log('>80', moreThenEighty);
+  console.log('>90', moreThenNinety);
 }
 
 //getMaxLength();
-
+*/
   return (
     <section className="add-new">
       <h2 className="add-new__title">Как разместить публикацию через портал ГРАЖДАНИН-ПОЭТ:</h2>
@@ -96,15 +170,18 @@ function getMaxLength() {
         <li className="add-new__item">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</li>
       </ol>
 
+      <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
+
       <form className="add-new__form" onSubmit={handleSubmit}>
-        <input className="add-new__input" type="text" placeholder="Введите свой запрос" ref={inputRef} required />
+        <input className="add-new__input" type="text" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}/>
         <h3 className="add-new__poem-title">{title}</h3>
-        <div className="add-new__image">
+        <label className={addNewImageSelectors} style={{backgroundImage: 'url(' + newPetitionImg + ')',}}>
+          <input className="add-new__file-input" type="file" id="file" ref={fileInputRef} onChange={previewFiles}/>
           <p className="add-new__image-text">Изображение публикации</p>
-        </div>
+        </label>
         <p className="add-new__poem-text">{text}</p>
         <button className="button button_withborder" type="button" onClick={translate}>Перевести</button>
-        <button className="button" type="submit" disabled={isDisabled}>Разместить</button>
+        <button className={buttonSelectors} type="submit" disabled={isDisabled}>Разместить</button>
       </form>
     </section>
   );

@@ -10,7 +10,7 @@ function Petition({petition, showDate}) {
   React.useEffect(() => {
     petition.likes ? setLikes(petition.likes) : setLikes([]);
     petition.dislikes ? setDisLikes(petition.dislikes) : setDisLikes([]);
-  }, [])
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   function openPetition() {
     history.push(`/petitions/${petition.id}`);

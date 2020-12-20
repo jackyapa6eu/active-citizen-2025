@@ -9,3 +9,7 @@
   padding: 0 20px;
   text-align: center;
 }
+
+.add-new__image_loaded .add-new__image-text {
+  opacity: 0;
+}

@@ -9,6 +9,7 @@
 @import url(./styles/blocks/button/button.css);
 @import url(./styles/blocks/button/_white/button_white.css);
 @import url(./styles/blocks/button/_withborder/button_withborder.css);
+@import url(./styles/blocks/button/_disabled/button_disabled.css);
 
 @import url(./styles/blocks/header/header.css);
 @import url(./styles/blocks/header/__logo/header__logo.css);
@@ -68,6 +69,7 @@
 
 @import url(./styles/blocks/add-new/add-new.css);
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
+@import url(./styles/blocks/add-new/__image/_loaded/add-new__image_loaded.css);
 @import url(./styles/blocks/add-new/__image-text/add-new__image-text.css);
 @import url(./styles/blocks/add-new/__form/add-new__form.css);
 @import url(./styles/blocks/add-new/__input/add-new__input.css);
@@ -78,6 +80,7 @@
 @import url(./styles/blocks/add-new/__item/add-new__item.css);
 @import url(./styles/blocks/add-new/__item-image/add-new__item-image.css);
 @import url(./styles/blocks/add-new/__title/add-new__title.css);
+@import url(./styles/blocks/add-new/__file-input/add-new__file-input.css);
 
 @import url(./styles/blocks/opened-petition/opened-petition.css);
 @import url(./styles/blocks/opened-petition/__text/opened-petition__text.css);
