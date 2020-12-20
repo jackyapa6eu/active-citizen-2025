@@ -1,11 +1,22 @@
 .petitions__container_title {
-  top: 0;
-  right: 0;
   background: #8E9295;
-  width: 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
   height: 220px;
-  padding: 10px 10px 45px 60px;
-  flex-direction: column;
+  padding: 10px 10px 45px;
+  box-sizing: border-box;
+}
+
+.petitions__container_title::after {
+  content: '';
+  position: absolute;
+  top: 95px;
+  right: 10px;
+  background: url(../../../../images/ellipse.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
 }
 
 .petitions__item_type_culture .petitions__container_title {
