@@ -4,7 +4,6 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/database";
 import UserContext from '../contexts/UserContext';
-import imageCurcle from '../styles/images/ellipse.png';
 
 
 function OpenedPetition({showDate}) {
@@ -34,14 +33,61 @@ function OpenedPetition({showDate}) {
       setDate(showDate(obj.date));
       setCategory(obj.category);
       obj.likes ? setLikes(obj.likes) : setLikes([]);
-      obj.disLikes ? setDisLikes(obj.disLikes) : setDisLikes([]);
+      obj.dislikes ? setDisLikes(obj.dislikes) : setDisLikes([]);
     }); 
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  
+  function handleLikeClick() {
+    if (likes.includes(user.uid)) { // лайкал?
+      console.log('лайкал, удаляем лайк');
+      const newLikesArr = likes.filter(el => el !== user.uid); 
+      setLikes(newLikesArr); // удаляем лайк
+      firebaseReactionHandler('/likes', newLikesArr);
+    } else if (disLikes.includes(user.uid)) { // дизлайкал?
+      console.log('не лайкал и дизлайкал. убираем дизлайк. ставим лайк');
+      const newDisLikesArr = disLikes.filter(el => el !== user.uid); 
+      setDisLikes(newDisLikesArr); // удаляем дислайк
+      firebaseReactionHandler('/dislikes', newDisLikesArr);
+      const newLikesArr = [...likes, user.uid]; //ставим лайк
+      setLikes(newLikesArr);
+      firebaseReactionHandler('/likes', newLikesArr);
+    } else {
+      const newLikesArr = [...likes, user.uid]; //ставим лайк
+      setLikes(newLikesArr);
+      firebaseReactionHandler('/likes', newLikesArr);
+      console.log('ставим лайк')
+    }
+  }
+
+  function handleDislikeLikeClick() {
+    if (disLikes.includes(user.uid)) { // лайкал?
+      console.log('дислайкал, удаляем дислайк');
+      const newDisLikesArr = disLikes.filter(el => el !== user.uid); 
+      setDisLikes(newDisLikesArr); // удаляем дислайк
+      firebaseReactionHandler('/dislikes', newDisLikesArr);
+    } else if (likes.includes(user.uid)) { // лайкал?
+      console.log('не лайкал и дизлайкал. убираем лайк. ставим дислайк');
+      const newLikesArr = likes.filter(el => el !== user.uid); 
+      setLikes(newLikesArr); // удаляем лайк
+      firebaseReactionHandler('/likes', newLikesArr);
+      const newDisLikesArr = [...disLikes, user.uid]; //ставим лайк
+      setDisLikes(newDisLikesArr);
+      firebaseReactionHandler('/dislikes', newDisLikesArr);
+    } else {
+      const newDisLikesArr = [...disLikes, user.uid]; //ставим лайк
+      setDisLikes(newDisLikesArr);
+      console.log('ставим дислайк');
+      firebaseReactionHandler('/dislikes', newDisLikesArr);
+    }
+  }
+
+  function firebaseReactionHandler(path, reactionArr) {
+    var updates = {};
+    updates['/petitions/' + pId + path] = reactionArr;
+    return firebase.database().ref().update(updates);    
+  }
 
   return (
-
     <article className={`opened-petition opened-petition_type_${category}`}>
       <div className="opened-petition__info">
         <p className="opened-petition__text">{text}</p>
@@ -54,11 +100,11 @@ function OpenedPetition({showDate}) {
       <div className="opened-petition__container">
         <div className="opened-petition__reactions">
           <div className="flex">
-            <button className="btn btn_like"></button>
+            <button className="btn btn_like" onClick={handleLikeClick}></button>
             <p className="opened-petition__rating">{likes.length}</p>
           </div>
           <div className="flex">
-            <button className="btn btn_dislike"></button>
+            <button className="btn btn_dislike" onClick={handleDislikeLikeClick}></button>
             <p className="opened-petition__rating">{disLikes.length}</p>
           </div>
         </div>
