@@ -9,3 +9,7 @@
   padding: 14px 20px;
   margin-bottom: 20px;
 }
+
+.user__input:hover {
+  outline: 1px solid #4F92F6;;
+}

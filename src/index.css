@@ -13,12 +13,12 @@
 
 @import url(./styles/blocks/header/header.css);
 @import url(./styles/blocks/header/__logo/header__logo.css);
-@import url(./styles/blocks/header/__user/header__user.css);
-@import url(./styles/blocks/header/__login/header__login.css);
-@import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
-@import url(./styles/blocks/header/__button-container/header__button-container.css);
 @import url(./styles/blocks/header/__log-container/header__log-container.css);
+@import url(./styles/blocks/header/__login/header__login.css);
 @import url(./styles/blocks/header/__image-button/header__image-button.css);
+@import url(./styles/blocks/header/__button-container/header__button-container.css);
+@import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
+
 
 @import url(./styles/blocks/main/main.css);
 
@@ -59,13 +59,12 @@
 @import url(./styles/blocks/user/__container/user__container.css);
 @import url(./styles/blocks/user/__box/user__box.css);
 @import url(./styles/blocks/user/__image/user__image.css);
-@import url(./styles/blocks/user/__title/user__title.css);
-@import url(./styles/blocks/user/__lobby/user__lobby.css);
 @import url(./styles/blocks/user/__form/user__form.css);
 @import url(./styles/blocks/user/__question/user__question.css);
 @import url(./styles/blocks/user/__input/user__input.css);
 @import url(./styles/blocks/user/__input/_password/user__input_password.css);
 @import url(./styles/blocks/user/__button/user__button.css);
+@import url(./styles/blocks/user/__link/user__link.css);
 
 @import url(./styles/blocks/add-new/add-new.css);
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
@@ -75,7 +74,6 @@
 @import url(./styles/blocks/add-new/__input/add-new__input.css);
 @import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
 @import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
-@import url(./styles/blocks/add-new/__btns-wrapper/add-new__btns-wrapper.css);
 @import url(./styles/blocks/add-new/__direction/add-new__direction.css);
 @import url(./styles/blocks/add-new/__item/add-new__item.css);
 @import url(./styles/blocks/add-new/__item-image/add-new__item-image.css);
@@ -86,7 +84,6 @@
 @import url(./styles/blocks/opened-petition/__text/opened-petition__text.css);
 @import url(./styles/blocks/opened-petition/__image/opened-petition__image.css);
 @import url(./styles/blocks/opened-petition/__reactions/opened-petition__reactions.css);
-@import url(./styles/blocks/opened-petition/__reactions-item/opened-petition__reactions-item.css);
 @import url(./styles/blocks/opened-petition/__author/opened-petition__author.css);
 @import url(./styles/blocks/opened-petition/__info/opened-petition__info.css);
 @import url(./styles/blocks/opened-petition/_type/opened-petition_type_culture.css);
@@ -96,7 +93,6 @@
 @import url(./styles/blocks/opened-petition/__title/opened-petition__title.css);
 @import url(./styles/blocks/opened-petition/__date/opened-petition__date.css);
 @import url(./styles/blocks/opened-petition/__block/opened-petition__block.css);
-@import url(./styles/blocks/opened-petition/__curcle/opened-petition__curcle.css);
 @import url(./styles/blocks/opened-petition/__rating/opened-petition__rating.css);
 @import url(./styles/blocks/opened-petition/__container/opened-petition__container.css);
 

@@ -25,15 +25,15 @@ function Header({setUser}) {
   }
   return (
     <header className="header">
-      <Link to="/"><img className="header__logo"src={headerLogo} alt="Логотип Гражданин-поэт"/></Link>
+      <Link to="/"><img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/></Link>
       {user.uid &&  <div className="header__log-container">
                       <span className="header__login">{user.name}</span>
-                      <button onClick={signOut} className="button button_white header__button-sing-in">Выход</button>
+                      <button onClick={signOut} className="button button_white">Выход</button>
                     </div>
       }  
       {user.uid &&  <button className="button button_withborder" onClick={openAddNew}>Разместить<img className="header__image-button" src={headerImageButton} alt="#"/></button>}
       {!user.uid && <div className="header__button-container">
-                      <Link to="/user/sign-in" className="button button_white header__button-sing-in" type="button">Войти</Link>
+                      <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
                       <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
                     </div>
       }
