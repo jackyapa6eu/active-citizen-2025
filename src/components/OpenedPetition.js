@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  useHistory
+} from "react-router-dom";
 import { useParams } from 'react-router';
 import firebase from 'firebase/app';
 import "firebase/auth";
@@ -9,6 +12,7 @@ import UserContext from '../contexts/UserContext';
 function OpenedPetition({showDate}) {
   const { pId } = useParams();
   const user = React.useContext(UserContext);
+  const history = useHistory();
   const [text, setText] = React.useState('');
   const [title, setTitle] = React.useState('');
   const [author, setAuthor] = React.useState('');
@@ -38,6 +42,10 @@ function OpenedPetition({showDate}) {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   function handleLikeClick() {
+    if (!user.uid) {
+      console.log('ВЫ НЕЗАЛОГИНЕНЫ');
+      return history.push('/user/sign-in')
+    }
     if (likes.includes(user.uid)) { // лайкал?
       console.log('лайкал, удаляем лайк');
       const newLikesArr = likes.filter(el => el !== user.uid); 
@@ -60,6 +68,10 @@ function OpenedPetition({showDate}) {
   }
 
   function handleDislikeLikeClick() {
+    if (!user.uid) {
+      console.log('ВЫ НЕЗАЛОГИНЕНЫ');
+      return history.push('/user/sign-in')
+    }
     if (disLikes.includes(user.uid)) { // лайкал?
       console.log('дислайкал, удаляем дислайк');
       const newDisLikesArr = disLikes.filter(el => el !== user.uid); 
