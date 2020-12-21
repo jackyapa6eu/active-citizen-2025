@@ -8,6 +8,7 @@ import {
   Link, 
   useHistory
 } from "react-router-dom";
+import classNames from 'classnames'
 
 function User() {
   const signUpNameInputRef = React.useRef();
@@ -16,7 +17,31 @@ function User() {
   const signInEmailInputRef = React.useRef();
   const signInPassInputRef = React.useRef();
   const [errorMsg, setErrorMsg] = React.useState('');
+  const [signUpPassFocused, setSignUpPassFocused] = React.useState(false);
+  const [signInPassFocused, setSignInPassFocused] = React.useState(false);
+  const [passIsVisible, setPassIsVisible] = React.useState(false);
   const history = useHistory();
+
+  const signUpPassLabelSelectors = classNames(
+    'user__pass-label',
+    {
+      'user__pass-label_focused-pass': signUpPassFocused
+    }
+  )
+
+  const signInPassLabelSelectors = classNames(
+    'user__pass-label',
+    {
+      'user__pass-label_focused-pass': signInPassFocused
+    }
+  )
+
+  const togglePassBtnSelectors = classNames(
+    'user__toggle-pass-btn',
+    {
+      'user__toggle-pass-btn_opened': passIsVisible
+    }
+  )
 
   function signUp(event) {
     event.preventDefault();
@@ -71,6 +96,42 @@ function User() {
     return firebase.database().ref().update(updates);
   }
 
+  function signUpPasswordFocused() {
+    setSignUpPassFocused(true);
+  }
+
+  function signUpPasswordUnFocused() {
+    setSignUpPassFocused(false);
+  }
+
+  function signInPasswordFocused() {
+    setSignInPassFocused(true)
+  }
+
+  function signInPasswordUnFocused() {
+    setSignInPassFocused(false)
+  }
+
+  function togglePassSignUp() {
+    if (passIsVisible) {
+      signUpPassInputRef.current.type = 'password';
+      setPassIsVisible(false);
+    } else {
+      signUpPassInputRef.current.type = 'text';
+      setPassIsVisible(true);
+    }
+  }
+
+  function togglePassSignIn() {
+    if (passIsVisible) {
+      signInPassInputRef.current.type = 'password';
+      setPassIsVisible(false);
+    } else {
+      signInPassInputRef.current.type = 'text';
+      setPassIsVisible(true);
+    }
+  }
+
   return (
     <section className="user user_sign">
       <img className="user__image" src={image} alt=""/>
@@ -83,7 +144,10 @@ function User() {
                 <input className="user__input" type="text" placeholder="Фамилия" ref={signUpNameInputRef} required/>
                 <input className="user__input" type="email" placeholder="Email" ref={signUpEmailInputRef} required/>
                 <span>{errorMsg}</span>
-                <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signUpPassInputRef} required/>
+                <label className={signUpPassLabelSelectors}>
+                  <input className="user__input user__input_password" type="password" placeholder="Пароль" onBlur={signUpPasswordUnFocused} onFocus={signUpPasswordFocused} ref={signUpPassInputRef} required/>
+                  <button className={togglePassBtnSelectors} type="button" onClick={togglePassSignUp}/>
+                </label>
                 <button className="button user__button" type="submit">Создать аккаунт</button>
               </form>
               <span className="user__question">Уже есть аккаунт? 
@@ -97,7 +161,10 @@ function User() {
             <div className="user__box">
               <form className="user__form" onSubmit={signIn}>
                 <input className="user__input" type="email" placeholder="Email" ref={signInEmailInputRef} required/>
-                <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
+                <label className={signInPassLabelSelectors}>
+                  <input className="user__input user__input_password" type="password" onFocus={signInPasswordFocused} onBlur={signInPasswordUnFocused} placeholder="Пароль" ref={signInPassInputRef} required/>
+                  <button className={togglePassBtnSelectors} type="button" onClick={togglePassSignIn}/>
+                </label>
                 <span>{errorMsg}</span>
                 <button className="button user__button" type="submit">Войти</button>          
               </form>

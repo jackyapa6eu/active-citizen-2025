@@ -63,6 +63,10 @@
 @import url(./styles/blocks/user/__question/user__question.css);
 @import url(./styles/blocks/user/__input/user__input.css);
 @import url(./styles/blocks/user/__input/_password/user__input_password.css);
+@import url(./styles/blocks/user/__pass-label/user__pass-label.css);
+@import url(./styles/blocks/user/__toggle-pass-btn/user__toggle-pass-btn.css);
+@import url(./styles/blocks/user/__toggle-pass-btn/_opened/user__toggle-pass-btn_opened.css);
+@import url(./styles/blocks/user/__pass-label/_focused-pass/user__pass-label_focused-pass.css);
 @import url(./styles/blocks/user/__button/user__button.css);
 @import url(./styles/blocks/user/__link/user__link.css);
 
