@@ -1,7 +1,6 @@
 .user__input {
   background: #FDFDFD;
   border: none;
-
   font-family: 'Lora', sans-serif;
   font-size: 16px;
   line-height: 140%;
@@ -12,4 +11,8 @@
 
 .user__input:hover {
   outline: 1px solid #4F92F6;;
+}
+
+.user__input:focus {
+  outline: 2px solid #8E9295;
 }
