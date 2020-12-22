@@ -1,4 +1,7 @@
 .user__toggle-pass-btn {
+  position: absolute;
+  right: 20px;
+  top: 12px;
   background: none;
   border: none;
   outline: none;

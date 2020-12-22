@@ -110,3 +110,6 @@
 @import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-in.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-up.css);
 @import url(./styles/blocks/sign-in-up-req/__close-btn/sign-in-up-req__close-btn.css);
+
+@import url(./styles/blocks/popup/popup.css);
+@import url(./styles/blocks/popup/__text/popup__text.css);
