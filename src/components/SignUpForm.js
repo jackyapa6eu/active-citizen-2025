@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from 'firebase/app';
+import imageBg from '../styles/images/btn_plus.svg';
 import "firebase/auth";
 import {
   useHistory
@@ -123,7 +124,7 @@ function SignUpForm({setIsSuccessed}) {
         <button className={togglePassBtnSelectors} type="button" onClick={togglePassSignUp}/>
       </label>
       <button className="button user__button" type="submit">Создать аккаунт</button>
-  </form>
+    </form>
   );
 }
 

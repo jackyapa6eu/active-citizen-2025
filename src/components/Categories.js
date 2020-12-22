@@ -8,20 +8,32 @@ function Categories({setSelectedCategory, selectedCategory}) {
     text: 'Все',
   },
   { 
-    value: 'social',
-    text: 'Социум',
-  },
-  { 
     value: 'culture',
     text: 'Культура',
   },
   { 
-    value: 'politics',
-    text: 'Политика',
+    value: 'homeland',
+    text: 'Родина',
   },
   { 
-    value: 'transport',
-    text: 'Транспорт',
+    value: 'history',
+    text: 'История',
+  },
+  { 
+    value: 'science',
+    text: 'Наука',
+  },
+  { 
+    value: 'nature',
+    text: 'Природа',
+  },
+  { 
+    value: 'family',
+    text: 'Семья',
+  },
+  { 
+    value: 'relationship',
+    text: 'Отношения',
   }
   ]
   return (

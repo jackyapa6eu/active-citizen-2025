@@ -1,4 +1,4 @@
 .sign-in-up-req__btn_sign-up {
-  color: white;
-  background-image: linear-gradient(to right, #8E4FF6, #4F92F6);
+  width: 160px;
+  margin-bottom: 70px;
 }

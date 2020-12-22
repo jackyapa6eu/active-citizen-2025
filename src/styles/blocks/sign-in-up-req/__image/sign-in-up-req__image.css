@@ -1,5 +1,5 @@
 .sign-in-up-req__image {
-  max-width: 48%;
-  object-fit: contain;
-  object-position: top;
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-self: center;
 }

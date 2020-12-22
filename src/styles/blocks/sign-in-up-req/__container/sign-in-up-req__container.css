@@ -1,9 +1,9 @@
-.user {
+.sign-in-up-req__container {
   max-width: 1200px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-rows: repeat(3, max-content);
   align-items: center;
+  row-gap: 35px;
   margin: 0 auto;
 }

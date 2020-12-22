@@ -1,5 +1,7 @@
 @import url(./styles/vendor/normalize.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
 @import url(./styles/vendor/fonts/fonts.css);
 
 @import url(./styles/blocks/App/App.css);
@@ -12,7 +14,9 @@
 @import url(./styles/blocks/button/_disabled/button_disabled.css);
 
 @import url(./styles/blocks/header/header.css);
+@import url(./styles/blocks/header/__logo-link/header__logo-link.css);
 @import url(./styles/blocks/header/__logo/header__logo.css);
+@import url(./styles/blocks/header/__logo-title/header__logo-title.css);
 @import url(./styles/blocks/header/__log-container/header__log-container.css);
 @import url(./styles/blocks/header/__login/header__login.css);
 @import url(./styles/blocks/header/__image-button/header__image-button.css);
@@ -55,8 +59,6 @@
 @import url(./styles/blocks/btn/_dislike/btn_dislike.css);
 
 @import url(./styles/blocks/user/user.css);
-@import url(./styles/blocks/user/_sign/user_sign.css);
-@import url(./styles/blocks/user/__container/user__container.css);
 @import url(./styles/blocks/user/__box/user__box.css);
 @import url(./styles/blocks/user/__image/user__image.css);
 @import url(./styles/blocks/user/__form/user__form.css);
@@ -101,15 +103,13 @@
 @import url(./styles/blocks/opened-petition/__container/opened-petition__container.css);
 
 @import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);
-@import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
-@import url(./styles/blocks/sign-in-up-req/__info/sign-in-up-req__info.css);
+@import url(./styles/blocks/sign-in-up-req/__container/sign-in-up-req__container.css);
 @import url(./styles/blocks/sign-in-up-req/__title/sign-in-up-req__title.css);
 @import url(./styles/blocks/sign-in-up-req/__description/sign-in-up-req__description.css);
-@import url(./styles/blocks/sign-in-up-req/__buttons/sign-in-up-req__buttons.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/sign-in-up-req__btn.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-in.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-up.css);
-@import url(./styles/blocks/sign-in-up-req/__close-btn/sign-in-up-req__close-btn.css);
+@import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
 
 @import url(./styles/blocks/popup/popup.css);
 @import url(./styles/blocks/popup/__text/popup__text.css);

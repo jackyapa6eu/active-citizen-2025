@@ -1,6 +1,5 @@
 .header__button-container {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  column-gap: 40px;
-  align-items: center;
+  grid-column-gap: 40px;
 }

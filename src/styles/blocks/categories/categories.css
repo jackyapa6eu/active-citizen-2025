@@ -1,11 +1,10 @@
 .categories {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
-  margin: 0;
+  margin: 60px auto 80px;
   padding: 0;
-  height: 70px;
-  align-items: flex-end;
-  margin-bottom: 30px;
 }

@@ -5,7 +5,7 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
-import headerLogo from '../styles/images/header__logo.png';
+import headerLogo from '../styles/images/logo.png';
 import headerImageButton from '../styles/images/btn_plus.svg';
 import UserContext from '../contexts/UserContext';
 
@@ -25,7 +25,10 @@ function Header({setUser}) {
   }
   return (
     <header className="header">
-      <Link to="/"><img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/></Link>
+      <Link className="header__logo-link" to="/">
+        <img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/>
+        <p className="header__logo-title">гражданин-поэт</p>
+      </Link>
       {user.uid &&  <div className="header__log-container">
                       <span className="header__login">{user.name}</span>
                       <button onClick={signOut} className="button button_white">Выход</button>

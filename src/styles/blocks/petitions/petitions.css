@@ -1,10 +1,11 @@
 .petitions {
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 350px));
-  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-columns: repeat(3, minmax(300px, 400px));
   grid-gap: 30px;
+  font-family: 'Alegreya', sans-serif;
 }
 
 @media screen and (max-width: 940px) {

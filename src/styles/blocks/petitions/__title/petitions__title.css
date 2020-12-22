@@ -1,10 +1,9 @@
 .petitions__title {
   grid-column: 1/3;
   grid-row: 1/2;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
+  min-height: 120px;
+  font-weight: 500;
   font-size: 30px;
-  line-height: 110%;
-  min-height: 125px;
+  line-height: 120%;
   margin: 0;
 }

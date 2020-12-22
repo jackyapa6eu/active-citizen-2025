@@ -1,11 +1,8 @@
 .page {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1110px;
-  margin: 0 auto;
-  /* outline: 2px solid black; */
-  min-height: 100vh;
   background: #fff;
   padding: 0px;
   box-sizing: border-box;

@@ -1,25 +1,7 @@
 .petitions__container_rating {
   grid-column: 1/2;
   grid-row: 2/3;
-  display: flex;
-  justify-content: space-between;
-  background: #8E9295;
-  height: 40px;
-  padding: 0 10%;
-}
-
-.petitions__item_type_culture .petitions__container_rating {
-  background:#C12B0A;
-}
-
-.petitions__item_type_politics .petitions__container_rating {
-  background:#08439B;
-}
-
-.petitions__item_type_social .petitions__container_rating {
-  background:#C1A60A;
-}
-
-.petitions__item_type_transport .petitions__container_rating {
-  background: #500AC1;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 10px;
 }

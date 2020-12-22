@@ -1,10 +1,5 @@
 .sign-in-up-req__description {
-  white-space: pre-line;
-  margin: 0;
-  font-family: 'Lora', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 140%;
-  font-weight: 500;
-  color: #101010;
-  margin-bottom: 60px;
+  margin: 0;
 }

@@ -1,0 +1,8 @@
+.header__logo-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0 0 0 20px;
+  color: #101010;
+  text-transform: uppercase;
+}
