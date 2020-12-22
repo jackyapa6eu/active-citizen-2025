@@ -1,14 +1,6 @@
 .user__pass-label {
+  position: relative;
   margin-bottom: 40px;
-  display: flex;
-  align-items: center;
   background: #FDFDFD;
-}
-
-.user__pass-label:hover {
-  outline: 1px solid #4F92F6;;
-}
-
-.user__pass-label:focus {
-  outline: 2px solid #8E9295;
+  max-width: 100%;
 }
