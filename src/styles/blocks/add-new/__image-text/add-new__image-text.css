@@ -2,11 +2,11 @@
   position: absolute;
   top: calc(50% + 30px);
   left: calc(50% - 120px);
-  font-family: 'Lora', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  line-height: 140%;
-  color: #8E9295;
+  color: rgba(28, 69, 131, 0.54);
   padding: 0 20px;
+  margin: 12px 0 0;
   text-align: center;
 }
 

@@ -73,18 +73,17 @@
 @import url(./styles/blocks/user/__link/user__link.css);
 
 @import url(./styles/blocks/add-new/add-new.css);
+@import url(./styles/blocks/add-new/__form/add-new__form.css);
+@import url(./styles/blocks/add-new/__select-cat/add-new__select-cat.css);
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
 @import url(./styles/blocks/add-new/__image/_loaded/add-new__image_loaded.css);
 @import url(./styles/blocks/add-new/__image-text/add-new__image-text.css);
-@import url(./styles/blocks/add-new/__form/add-new__form.css);
 @import url(./styles/blocks/add-new/__input/add-new__input.css);
 @import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
 @import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
-@import url(./styles/blocks/add-new/__direction/add-new__direction.css);
-@import url(./styles/blocks/add-new/__item/add-new__item.css);
-@import url(./styles/blocks/add-new/__item-image/add-new__item-image.css);
-@import url(./styles/blocks/add-new/__title/add-new__title.css);
 @import url(./styles/blocks/add-new/__file-input/add-new__file-input.css);
+@import url(./styles/blocks/add-new/__button/add-new__button.css);
+@import url(./styles/blocks/add-new/__text-button/add-new__text-button.css);
 
 @import url(./styles/blocks/opened-petition/opened-petition.css);
 @import url(./styles/blocks/opened-petition/__text/opened-petition__text.css);
@@ -101,6 +100,8 @@
 @import url(./styles/blocks/opened-petition/__block/opened-petition__block.css);
 @import url(./styles/blocks/opened-petition/__rating/opened-petition__rating.css);
 @import url(./styles/blocks/opened-petition/__container/opened-petition__container.css);
+@import url(./styles/blocks/opened-petition/__container/_left/opened-petition__container_left.css);
+@import url(./styles/blocks/opened-petition/__container/_right/opened-petition__container_right.css);
 
 @import url(./styles/blocks/sign-in-up-req/sign-in-up-req.css);
 @import url(./styles/blocks/sign-in-up-req/__container/sign-in-up-req__container.css);

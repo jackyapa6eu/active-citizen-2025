@@ -162,25 +162,17 @@ function getMaxLength() {
 */
   return (
     <section className="add-new">
-      <h2 className="add-new__title">Как разместить публикацию через портал ГРАЖДАНИН-ПОЭТ:</h2>
-      <ol className="add-new__direction">
-        <li className="add-new__item">Выберите наиболее подходящую к вашей публикации категорию из списка.</li>
-        <li className="add-new__item">Коротко опишите суть своей публикации. Нажмите&nbsp;“Перевести”, чтобы увидеть ваш текст на языке поэзии.</li>
-        <li className="add-new__item">Чтобы добавить фото, нажмите на <img className="add-new__item-image" src={addImageButton} alt="#"></img> Фото&nbsp;пройдёт&nbsp;моментальную модерацию.</li>
-        <li className="add-new__item">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</li>
-      </ol>
-
-      <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
-
       <form className="add-new__form" onSubmit={handleSubmit}>
-        <input className="add-new__input" type="text" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}/>
-        <h3 className="add-new__poem-title">{title}</h3>
+        <p className="add-new__select-cat">Выберите категорию публикации</p>
+        <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
         <label className={addNewImageSelectors} style={{backgroundImage: 'url(' + newPetitionImg + ')',}}>
           <input className="add-new__file-input" type="file" id="file" ref={fileInputRef} onChange={previewFiles}/>
           <p className="add-new__image-text">Изображение публикации</p>
         </label>
-        <p className="add-new__poem-text">{text}</p>
-        <button className="button button_withborder" type="button" onClick={translate}>Перевести</button>
+        <textarea className="add-new__input" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}></textarea>
+        <h3 className="add-new__poem-title">{title}</h3>
+        <button className="button button_withborder add-new__button" type="button" onClick={translate}>Перевести</button>
+        <p className="add-new__text-button">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</p>
         <button className={buttonSelectors} type="submit" disabled={isDisabled}>Разместить</button>
       </form>
     </section>

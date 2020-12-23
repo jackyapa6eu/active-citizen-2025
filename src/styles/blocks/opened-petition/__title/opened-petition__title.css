@@ -1,8 +1,6 @@
 .opened-petition__title {
-  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 120%;
-  margin: 0;
-  white-space: pre-line;
+  margin: 0 0 30px;
 }

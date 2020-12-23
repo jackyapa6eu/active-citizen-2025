@@ -1,6 +1,5 @@
 .opened-petition__container {
   display: flex;
-  justify-content: space-between;
-  width: 65%;
-  margin: 16px 7% 17px auto;
+  font-family: 'Alegreya', sans-serif;
+  color: #02214F;
 }

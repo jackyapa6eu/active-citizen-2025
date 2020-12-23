@@ -1,8 +1,10 @@
 .header__logo-title {
+  min-width: 330px;
+  font-family: 'Alegreya', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 120%;
   margin: 0 0 0 20px;
-  color: #101010;
+  color: #3748A6;
   text-transform: uppercase;
 }
