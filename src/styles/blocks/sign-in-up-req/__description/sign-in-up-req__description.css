@@ -3,3 +3,11 @@
   line-height: 140%;
   margin: 0;
 }
+
+@media screen and (max-width: 720px) {
+  .sign-in-up-req__description {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+  }
+}

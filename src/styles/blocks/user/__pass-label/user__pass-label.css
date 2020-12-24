@@ -4,3 +4,9 @@
   background: #FDFDFD;
   width: 100%;
 }
+
+@media screen and (max-width: 720px) {
+  .user__pass-label {
+    margin-bottom: 25px;
+  }
+}

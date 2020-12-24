@@ -15,3 +15,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 720px) {
+  .user__toggle-pass-btn {
+    right: 10px;
+    top: 3px;
+    background-size: auto;
+  }
+}

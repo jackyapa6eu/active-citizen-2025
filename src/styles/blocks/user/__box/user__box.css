@@ -9,3 +9,10 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 720px) {
+  .user__box {
+    margin: 20px 0 -46px;
+    padding: 30px 20px;
+  }
+}

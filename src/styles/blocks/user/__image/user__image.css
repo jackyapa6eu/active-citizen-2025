@@ -2,3 +2,9 @@
   object-fit: contain;
   object-position: top;
 }
+
+@media screen and (max-width: 720px) {
+  .user__image {
+    width: 61%;
+  }
+}

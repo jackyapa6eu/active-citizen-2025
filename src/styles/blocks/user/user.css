@@ -6,4 +6,13 @@
   justify-items: center;
   align-items: center;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+  .user {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }

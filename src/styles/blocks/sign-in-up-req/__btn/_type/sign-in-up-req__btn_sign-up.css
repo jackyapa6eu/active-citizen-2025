@@ -1,4 +1,16 @@
 .sign-in-up-req__btn_sign-up {
-  width: 160px;
+  width: 190px;
+  font-size: 19px;
+  line-height: 120%;
   margin-bottom: 70px;
+}
+
+@media screen and (max-width: 720px) {
+  .sign-in-up-req__btn_sign-up {
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    margin: 20px 0 47px;
+    justify-self: center;
+  }
 }
