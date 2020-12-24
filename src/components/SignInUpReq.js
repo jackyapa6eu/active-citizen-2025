@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../styles/images/SignInUpReq__image.png'
 import people from '../styles/images/people.png'
 import {
   Link
