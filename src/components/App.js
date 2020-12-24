@@ -16,6 +16,7 @@ import OpenedPetition from './OpenedPetition';
 import SignInUpReq from './SignInUpReq';
 import Feed from './Feed';
 import Categories from './Categories';
+import Footer from './Footer';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -109,6 +110,7 @@ function App() {
               </Route>
             </Switch>
           </main>
+          <Footer/>
         </div>
       </UserContext.Provider>
     </div>
