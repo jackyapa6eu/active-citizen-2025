@@ -5,7 +5,8 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
-import headerLogo from '../styles/images/header__logo.png';
+import headerLogo from '../styles/images/logo.png';
+import headerImageButton from '../styles/images/btn_plus.svg';
 import UserContext from '../contexts/UserContext';
 
 function Header({setUser}) {
@@ -24,9 +25,21 @@ function Header({setUser}) {
   }
   return (
     <header className="header">
-      <Link to="/"><img className="header__logo"src={headerLogo} alt="Логотип Гражданин-поэт"/></Link>
-      {user.uid ? <div><span>{user.name}  </span><span onClick={signOut}>  выход</span></div> : <Link to="/user">пользователь</Link>}  
-      <button className="header__add-btn" onClick={openAddNew}>Добавить</button>
+      <Link className="header__logo-link" to="/">
+        <img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/>
+        <p className="header__logo-title">гражданин-поэт</p>
+      </Link>
+      {user.uid &&  <div className="header__log-container">
+                      <span className="header__login">{user.name}</span>
+                      <button onClick={signOut} className="button button_white">Выход</button>
+                    </div>
+      }  
+      {user.uid &&  <button className="button button_withborder" onClick={openAddNew}>Разместить<img className="header__image-button" src={headerImageButton} alt="#"/></button>}
+      {!user.uid && <div className="header__button-container">
+                      <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
+                      <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
+                    </div>
+      }
     </header>
   );
 }

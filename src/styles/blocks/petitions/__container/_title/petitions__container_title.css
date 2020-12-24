@@ -1,9 +1,7 @@
 .petitions__container_title {
-  top: 0;
-  right: 0;
-  background: #F6DD4F;
-  width: 220px;
-  height: 220px;
-  padding: 10px 10px 45px 60px;
-  flex-direction: column;
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  margin: 20px 20px 15px;
 }

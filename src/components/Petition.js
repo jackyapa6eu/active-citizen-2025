@@ -1,24 +1,37 @@
 import React from 'react';
-import petitionImage from '../styles/images/image1.png';
+import {
+  useHistory
+} from "react-router-dom";
 
-function Petition({petition}) {
+function Petition({petition, showDate}) {
+  const history = useHistory();
+  const [likes, setLikes] = React.useState([]);
+  const [disLikes, setDisLikes] = React.useState([]);
+  React.useEffect(() => {
+    petition.likes ? setLikes(petition.likes) : setLikes([]);
+    petition.dislikes ? setDisLikes(petition.dislikes) : setDisLikes([]);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  function openPetition() {
+    history.push(`/petitions/${petition.id}`);
+  }
   return (
-        <div className="petitions__item">
-          <div class="petitions__container petitions__container_title">
-            <h3 className="petitions__title">{petition.poem.fields.name}</h3>
-            <p class="petitions__data">12 декабря 2020</p>
-          </div>
-          <div class="petitions__container petitions__container_rating">
-            <div class="flex">
-              <button class="btn btn_like"></button>
-              <p class="petitions__rating">1024</p>
+        <div className={`petitions__item petitions__item_type_${petition.category}`} onClick={openPetition}>
+          <div className="petitions__container petitions__container_title">
+            <h3 className="petitions__title">{petition.poem.title}</h3>
+            <div className="petitions__container petitions__container_rating">
+              <div className="flex">
+                <button className="btn btn_like"></button>
+                <p className="petitions__rating">{likes.length}</p>
+              </div>
+              <div className="flex">
+                <button className="btn btn_dislike"></button>
+                <p className="petitions__rating">{disLikes.length}</p>
+              </div>
             </div>
-            <div class="flex">
-              <button class="btn btn_dislike"></button>
-              <p class="petitions__rating">362</p>
-            </div>
+            <span className="petitions__data">{showDate(petition.date)}</span>
           </div>
-          <img src={petitionImage} alt="" class="petitions__image"/>
+          <img src={petition.imgLink} alt="" className="petitions__image"/>
         </div>
         )
 }

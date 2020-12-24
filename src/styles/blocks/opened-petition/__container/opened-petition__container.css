@@ -1,0 +1,5 @@
+.opened-petition__container {
+  display: flex;
+  font-family: 'Alegreya', sans-serif;
+  color: #02214F;
+}

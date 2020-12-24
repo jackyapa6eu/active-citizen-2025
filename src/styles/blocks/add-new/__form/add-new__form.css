@@ -1,6 +1,14 @@
 .add-new__form {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, max-content);
+  grid-gap: 20px 30px;
+  margin: 0 auto 60px;
+  padding: 0;
+  font-family: 'Lora', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #8E9295;
 }

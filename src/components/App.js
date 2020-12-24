@@ -12,6 +12,11 @@ import Petitions from './Petitions';
 import User from './User';
 import Header from './Header';
 import AddNew from './AddNew';
+import OpenedPetition from './OpenedPetition';
+import SignInUpReq from './SignInUpReq';
+import Feed from './Feed';
+import Categories from './Categories';
+import Footer from './Footer';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -27,6 +32,7 @@ firebase.initializeApp(firebaseConfig);
 function App() {
   const [petitions, setPetitions] = React.useState([]);
   const [user, setUser] = React.useState({});
+  const [isReqOpened, setIsReqOpened] = React.useState(true);
   React.useEffect(() => {
     authUser();
     getPetitions();
@@ -69,9 +75,18 @@ function App() {
       }
       const obj = snapshot.val();
       setUser(obj);
+      setIsReqOpened(true);
     })
   }
 
+  function closeRequest() {
+    setIsReqOpened(false);
+  }
+
+  function showDate(date) {
+    let day = new Date(date);
+    return `${day.toLocaleString('ru',{day: 'numeric', month: 'long', year: 'numeric'}).replace('г.', '')}`
+}
 
   return (
     <div className="App">
@@ -81,7 +96,8 @@ function App() {
           <main className="main">
             <Switch>
               <Route exact path="/">
-                <Petitions petitions={petitions}/>
+                {(!user.uid && isReqOpened) && <SignInUpReq closeRequest={closeRequest}/>}
+                <Feed petitions={petitions} showDate={showDate}/>
               </Route>
               <Route path="/user">
                 <User/>
@@ -89,9 +105,12 @@ function App() {
               <Route path="/add-new">
                 <AddNew/>
               </Route>
+              <Route path="/petitions/:pId">
+                <OpenedPetition showDate={showDate}/>
+              </Route>
             </Switch>
           </main>
-          <footer className="footer">footer</footer>
+          <Footer/>
         </div>
       </UserContext.Provider>
     </div>

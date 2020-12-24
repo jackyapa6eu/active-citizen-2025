@@ -1,8 +1,15 @@
 .petitions {
-  max-width: 1110px;
-  margin: 40px auto 94px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
-  grid-template-rows: repeat(auto-fill, 350px);
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(300px, 400px));
+  grid-gap: 30px;
+  font-family: 'Alegreya', sans-serif;
+}
+
+@media screen and (max-width: 940px) {
+  .petitions {
+    grid-template-columns: repeat(2, minmax(300px, 350px));
+  }
 }

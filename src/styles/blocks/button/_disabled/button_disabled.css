@@ -1,0 +1,6 @@
+.button_disabled {
+  background-image: none;
+  color: #E1E1E1;
+  background: #8E9295;
+  cursor: no-drop;
+}

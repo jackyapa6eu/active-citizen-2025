@@ -1,0 +1,11 @@
+.add-new__text-button {
+  max-width: 440px;
+  grid-column: 1/2;
+  justify-self: flex-end;
+  align-self: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(22, 63, 124, 0.5);
+  margin: 0;
+}

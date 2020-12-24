@@ -1,0 +1,26 @@
+.opened-petition__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 50px 20px;
+}
+
+.opened-petition_type_culture .opened-petition__block {
+  background: #F66D4F;
+  color: black;
+}
+
+.opened-petition_type_politics .opened-petition__block {
+  background: #4F92F6;
+  color: white;
+}
+
+.opened-petition_type_social .opened-petition__block {
+  background: #F6DD4F;
+  color: black;
+}
+
+.opened-petition_type_transport .opened-petition__block {
+  background: #8E4FF6;
+  color: white;
+}

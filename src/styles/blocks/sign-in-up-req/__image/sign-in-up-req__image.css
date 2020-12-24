@@ -1,0 +1,5 @@
+.sign-in-up-req__image {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-self: center;
+}
