@@ -14,7 +14,7 @@ function SignInUpReq({closeRequest}) {
         <p className="sign-in-up-req__description">
           {'Регистрируйся, делись своим мнением в форме поэзии и получай реакцию со всей страны.'}
         </p>
-        {user.uid && <Link to="/add-new" className="button button_withborder">Новая публикация</Link>}
+        {user.uid && <Link to="/add-new" className="button sign-in-up-req__btn sign-in-up-req__btn_publish">Новая публикация</Link>}
         {!user.uid && <Link to="/user/sign-up" className="button sign-in-up-req__btn sign-in-up-req__btn_sign-up" type="button">Регистрация</Link>}
         <img className="sign-in-up-req__image" src={people} alt="#"/>
       </div>

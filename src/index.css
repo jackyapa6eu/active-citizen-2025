@@ -110,7 +110,7 @@
 @import url(./styles/blocks/sign-in-up-req/__title/sign-in-up-req__title.css);
 @import url(./styles/blocks/sign-in-up-req/__description/sign-in-up-req__description.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/sign-in-up-req__btn.css);
-@import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-in.css);
+@import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_publish.css);
 @import url(./styles/blocks/sign-in-up-req/__btn/_type/sign-in-up-req__btn_sign-up.css);
 @import url(./styles/blocks/sign-in-up-req/__image/sign-in-up-req__image.css);
 
