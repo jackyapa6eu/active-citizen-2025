@@ -8,14 +8,12 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/database";
 import UserContext from '../contexts/UserContext';
-import Petitions from './Petitions';
 import User from './User';
 import Header from './Header';
 import AddNew from './AddNew';
 import OpenedPetition from './OpenedPetition';
 import SignInUpReq from './SignInUpReq';
 import Feed from './Feed';
-import Categories from './Categories';
 import Footer from './Footer';
 
 const firebaseConfig = {
@@ -32,7 +30,6 @@ firebase.initializeApp(firebaseConfig);
 function App() {
   const [petitions, setPetitions] = React.useState([]);
   const [user, setUser] = React.useState({});
-  const [isReqOpened, setIsReqOpened] = React.useState(true);
   React.useEffect(() => {
     authUser();
     getPetitions();
@@ -75,12 +72,7 @@ function App() {
       }
       const obj = snapshot.val();
       setUser(obj);
-      setIsReqOpened(true);
     })
-  }
-
-  function closeRequest() {
-    setIsReqOpened(false);
   }
 
   function showDate(date) {
@@ -96,7 +88,7 @@ function App() {
           <main className="main">
             <Switch>
               <Route exact path="/">
-                {(!user.uid && isReqOpened) && <SignInUpReq closeRequest={closeRequest}/>}
+                <SignInUpReq/>
                 <Feed petitions={petitions} showDate={showDate}/>
               </Route>
               <Route path="/user">
