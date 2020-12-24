@@ -7,7 +7,7 @@ function Feed({petitions, showDate}) {
   const [selectedCategory, setSelectedCategory] = React.useState('all');
   return (
     <>
-      <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
+      <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} place={'feed'}/>
       <Petitions petitions={petitions} showDate={showDate} selectedCategory={selectedCategory}/>
     </>
   );

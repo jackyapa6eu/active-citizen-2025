@@ -27,6 +27,8 @@
 @import url(./styles/blocks/main/main.css);
 
 @import url(./styles/blocks/categories/categories.css);
+@import url(./styles/blocks/categories/_place/categories_place_feed.css);
+@import url(./styles/blocks/categories/_place/categories_place_add-new.css);
 @import url(./styles/blocks/categories/__item/categories__item.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_all.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_culture.css);
