@@ -163,7 +163,7 @@ function getMaxLength() {
     <section className="add-new">
       <form className="add-new__form" onSubmit={handleSubmit}>
         <p className="add-new__select-cat">Выберите категорию публикации</p>
-        <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
+        <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} place={'add-new'}/>
         <label className={addNewImageSelectors} style={{backgroundImage: 'url(' + newPetitionImg + ')',}}>
           <input className="add-new__file-input" type="file" id="file" ref={fileInputRef} onChange={previewFiles}/>
           <p className="add-new__image-text">Изображение публикации</p>

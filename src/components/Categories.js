@@ -1,7 +1,7 @@
 import React from 'react';
 import Category from './Category';
 
-function Categories({setSelectedCategory, selectedCategory}) {
+function Categories({setSelectedCategory, selectedCategory, place}) {
   const categoriesData = [
   { 
     value: 'all',
@@ -37,7 +37,7 @@ function Categories({setSelectedCategory, selectedCategory}) {
   }
   ]
   return (
-    <ul className="categories">
+    <ul className={`categories categories_place_${place}`}>
       {categoriesData.map((categoryItem, index) => {
         return (
           <Category 

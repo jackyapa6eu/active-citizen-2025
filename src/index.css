@@ -27,6 +27,8 @@
 @import url(./styles/blocks/main/main.css);
 
 @import url(./styles/blocks/categories/categories.css);
+@import url(./styles/blocks/categories/_place/categories_place_feed.css);
+@import url(./styles/blocks/categories/_place/categories_place_add-new.css);
 @import url(./styles/blocks/categories/__item/categories__item.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_all.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_culture.css);
@@ -115,7 +117,6 @@
 @import url(./styles/blocks/popup/popup.css);
 @import url(./styles/blocks/popup/__text/popup__text.css);
 @import url(./styles/blocks/hidden/hidden.css);
-=======
 
 @import url(./styles/blocks/logo/__container/logo__container.css);
 @import url(./styles/blocks/logo/__container/_footer/logo__container_footer.css);

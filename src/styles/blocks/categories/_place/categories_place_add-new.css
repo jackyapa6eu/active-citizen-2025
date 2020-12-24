@@ -1,0 +1,8 @@
+.categories_place_add-new {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  gap: 10px;
+}
