@@ -3,13 +3,19 @@
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 400px));
+  grid-template-columns: repeat(3, minmax(280px, 400px));
   grid-gap: 30px;
   font-family: 'Alegreya', sans-serif;
 }
 
 @media screen and (max-width: 940px) {
   .petitions {
-    grid-template-columns: repeat(2, minmax(300px, 350px));
+    grid-template-columns: repeat(2, minmax(280px, 350px));
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .petitions {
+    grid-template-columns: repeat(1, minmax(280px, 350px));
   }
 }

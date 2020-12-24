@@ -1,6 +1,6 @@
 .button {
   height: 50px;
-  background-image: linear-gradient(to right, #8E4FF6, #4F92F6);
+  background: #3F5BFB;
   border: none;
   outline: none;
   font-family: 'Ubuntu', sans-serif;
@@ -15,4 +15,10 @@
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(153, 162, 255, 0.6);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .button {
+    font-size: 16px;
+  }
 }

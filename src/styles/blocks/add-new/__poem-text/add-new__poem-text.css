@@ -1,11 +1,20 @@
 .add-new__poem-text {
-  grid-column: 3/5;
-  grid-row: 2/3;
+  width: 100%;
   min-height: 210px;
-  border: 2px solid #8E9295;
-  margin: 0;
-  padding: 20px;
+  border: 2px solid rgba(28, 69, 131, 0.5);
   box-sizing: border-box;
-  overflow-y: scroll;
-  white-space: pre-line;
+  padding: 20px;
+  margin: 25px 0 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 720px) {
+  .add-new__poem-text {
+    min-height: 120px;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+  }
 }

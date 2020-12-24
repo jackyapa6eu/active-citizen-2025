@@ -32,3 +32,9 @@
 .add-new__image:hover.add-new__image::before {
   opacity: 1;
 }
+
+@media screen and (max-width: 720px) {
+  .add-new__image {
+    height: 150px;
+  }
+}

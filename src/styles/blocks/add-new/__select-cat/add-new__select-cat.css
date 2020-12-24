@@ -6,3 +6,9 @@
   color: #101010;
   margin: 0;
 }
+
+@media screen and (max-width: 720px) {
+  .add-new__select-cat {
+    display: none;
+  }
+}

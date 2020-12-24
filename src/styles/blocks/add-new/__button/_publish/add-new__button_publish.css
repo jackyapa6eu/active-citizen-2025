@@ -1,0 +1,10 @@
+.add-new__button_publish {
+  width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .add-new__button_publish {
+    width: 180px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.add-new__container {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+  .add-new__container {
+    grid-column: 1;
+    justify-content: center;
+  }
+}

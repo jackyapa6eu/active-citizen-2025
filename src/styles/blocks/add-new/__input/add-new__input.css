@@ -15,3 +15,17 @@
   border: 2px solid #4F92F6;
   outline: none;
 }
+
+@media screen and (max-width: 720px) {
+  .add-new__input {
+    font-size: 16px;
+    height: 120px;
+    min-height: auto;
+    border-radius: 5px 5px 0 0;
+    margin: 25px 0 0;
+  }
+
+  .add-new__input:hover {
+    color: #02214F;
+  }
+}

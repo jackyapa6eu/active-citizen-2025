@@ -24,7 +24,7 @@ function AddNew() {
   const history = useHistory();
 
   const buttonSelectors = classNames(
-    'button',
+    'button add-new__button add-new__button_publish',
     {
       'button_disabled': isDisabled
     }
@@ -170,10 +170,12 @@ function getMaxLength() {
           <p className="add-new__image-text">Изображение публикации</p>
         </label>
         <textarea className="add-new__input" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}></textarea>
-        <h3 className="add-new__poem-title">{title}</h3>
+        <p className="add-new__poem-text">{text}</p>
         <button className="button button_withborder add-new__button" type="button" onClick={translate}>Перевести</button>
-        <p className="add-new__text-button">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</p>
-        <button className={buttonSelectors} type="submit" disabled={isDisabled}>Разместить</button>
+        <div className="add-new__container">
+          <p className="add-new__text-button">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</p>
+          <button className={buttonSelectors} type="submit" disabled={isDisabled}>Опубликовать</button>
+        </div>
       </form>
     </section>
   );

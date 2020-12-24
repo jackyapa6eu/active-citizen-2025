@@ -9,3 +9,9 @@
   color: rgba(22, 63, 124, 0.5);
   margin: 0;
 }
+
+@media screen and (max-width: 720px) {
+  .add-new__text-button {
+    display: none;
+  }
+}

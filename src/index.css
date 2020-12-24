@@ -26,8 +26,6 @@
 
 @import url(./styles/blocks/main/main.css);
 
-@import url(./styles/blocks/footer/footer.css);
-
 @import url(./styles/blocks/categories/categories.css);
 @import url(./styles/blocks/categories/__item/categories__item.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_all.css);
@@ -82,7 +80,9 @@
 @import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
 @import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
 @import url(./styles/blocks/add-new/__file-input/add-new__file-input.css);
+@import url(./styles/blocks/add-new/__container/add-new__container.css);
 @import url(./styles/blocks/add-new/__button/add-new__button.css);
+@import url(./styles/blocks/add-new/__button/_publish/add-new__button_publish.css);
 @import url(./styles/blocks/add-new/__text-button/add-new__text-button.css);
 
 @import url(./styles/blocks/opened-petition/opened-petition.css);
