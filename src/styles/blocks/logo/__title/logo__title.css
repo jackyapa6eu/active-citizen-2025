@@ -1,0 +1,18 @@
+.logo__title {
+  min-width: 320px;
+  font-family: "Alegreya", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #3748a6;
+  margin: 0 0 0 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .logo__title {
+    min-width: 100%;
+    font-size: 15px;
+    margin: 0 0 0 5px;
+  }
+}

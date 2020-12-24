@@ -115,3 +115,18 @@
 @import url(./styles/blocks/popup/popup.css);
 @import url(./styles/blocks/popup/__text/popup__text.css);
 @import url(./styles/blocks/hidden/hidden.css);
+=======
+
+@import url(./styles/blocks/logo/__container/logo__container.css);
+@import url(./styles/blocks/logo/__container/_footer/logo__container_footer.css);
+@import url(./styles/blocks/logo/__image/logo__image.css);
+@import url(./styles/blocks/logo/__title/logo__title.css);
+
+@import url(./styles/blocks/footer/footer.css);
+@import url(./styles/blocks/footer/__container/footer__container.css);
+@import url(./styles/blocks/footer/__title/footer__title.css);
+@import url(./styles/blocks/footer/__subtitle/footer__subtitle.css);
+@import url(./styles/blocks/footer/__lists/footer__lists.css);
+@import url(./styles/blocks/footer/__list/_title/footer__list_title.css);
+@import url(./styles/blocks/footer/__list/footer__list.css);
+@import url(./styles/blocks/footer/__creators/footer__creators.css);

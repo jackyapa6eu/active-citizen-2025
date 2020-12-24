@@ -1,0 +1,8 @@
+.logo__container_footer {
+}
+
+@media screen and (max-width: 720px) {
+  .logo__container_footer {
+    flex-direction: column;
+  }
+}
