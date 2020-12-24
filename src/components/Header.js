@@ -3,15 +3,20 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import {
   Link,
-  useHistory
+  useLocation
 } from "react-router-dom";
 import headerLogo from '../styles/images/logo.png';
-import headerImageButton from '../styles/images/btn_plus.svg';
 import UserContext from '../contexts/UserContext';
+import UserQuestion from './UserQuestion';
+import classNames from 'classnames';
 
 function Header({setUser}) {
-  const history = useHistory();
+  let location = useLocation();
   const user = React.useContext(UserContext);
+  
+  React.useEffect(() => {
+    console.log(location);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   function signOut() {
     firebase.auth().signOut().then(function() {
       setUser({})
@@ -20,25 +25,39 @@ function Header({setUser}) {
       console.log(error);
     });
   }
-  function openAddNew() {
-    history.push("/add-new");
-  }
+
+  const logContainerSelectors = classNames(
+    'header__log-container',
+    {
+      'hidden' : (!user.uid || location.pathname === "/user/sign-in" || location.pathname === "/user/sign-up")
+    }
+  )
+
+  const buttonContainerSelectors = classNames (
+    'header__button-container',
+    {
+      'hidden': (user.uid || location.pathname === "/user/sign-in" || location.pathname === "/user/sign-up")
+    }
+  )
   return (
     <header className="header">
       <Link className="header__logo-link" to="/">
         <img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/>
         <p className="header__logo-title">гражданин-поэт</p>
       </Link>
-      {user.uid &&  <div className="header__log-container">
-                      <span className="header__login">{user.name}</span>
-                      <button onClick={signOut} className="button button_white">Выход</button>
-                    </div>
-      }  
-      {user.uid &&  <button className="button button_withborder" onClick={openAddNew}>Разместить<img className="header__image-button" src={headerImageButton} alt="#"/></button>}
-      {!user.uid && <div className="header__button-container">
-                      <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
-                      <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
-                    </div>
+      <div className={logContainerSelectors}>
+        <span className="header__login">{user.name}</span>
+        <button onClick={signOut} className="button button_white">Выход</button>
+      </div>
+      <div className={buttonContainerSelectors}>
+        <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
+        <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
+      </div>
+      {location.pathname === "/user/sign-in" && 
+        <UserQuestion question={'Нет аккаунта? '} path={'/user/sign-up'} linkText={'Регистрация'}/>
+      }
+      {location.pathname === "/user/sign-up" && 
+        <UserQuestion question={'Уже есть аккаунт? '} path={'/user/sign-in'} linkText={'Войдите'}/>
       }
     </header>
   );

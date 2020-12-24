@@ -4,7 +4,6 @@ import firebase from 'firebase/app';
 import "firebase/database";
 import "firebase/storage";
 import UserContext from '../contexts/UserContext';
-import addImageButton from '../styles/images/add-new__image-btn.svg';
 import Categories from './Categories';
 import {
   useHistory
@@ -33,7 +32,7 @@ function AddNew() {
   const addNewImageSelectors = classNames(
     'add-new__image',
     {
-      'add-new__image_loaded': newPetitionImg != '',
+      'add-new__image_loaded': newPetitionImg !== '',
     }
   )
 

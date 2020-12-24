@@ -1,6 +1,5 @@
 import React from 'react';
 import firebase from 'firebase/app';
-import imageBg from '../styles/images/btn_plus.svg';
 import "firebase/auth";
 import {
   useHistory
