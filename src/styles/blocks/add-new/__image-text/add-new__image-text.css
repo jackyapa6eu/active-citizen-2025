@@ -14,7 +14,7 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .add-new__image-text {
     display: none;
   }

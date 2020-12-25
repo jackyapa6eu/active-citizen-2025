@@ -1,5 +1,4 @@
 .header__logo-title {
-  min-width: 330px;
   font-weight: bold;
   font-size: 35px;
   line-height: 120%;
@@ -12,5 +11,11 @@
   .header__logo-title {
     font-size: 25px;
     margin: 0 0 0 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo-title {
+    font-size: 14px;
   }
 }

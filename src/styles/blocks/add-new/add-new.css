@@ -3,8 +3,8 @@
   flex: 1;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .add-new {
-    margin-bottom: -46px;
+    margin-bottom: 50px;
   }
 }

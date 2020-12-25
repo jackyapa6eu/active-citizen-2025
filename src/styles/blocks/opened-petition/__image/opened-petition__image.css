@@ -3,6 +3,9 @@
   height: 325px;
   grid-column: 1;
   grid-row: 2/4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1024px) {

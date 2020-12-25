@@ -6,3 +6,9 @@
   width: fit-content;
   gap: 10px;
 }
+
+@media screen and (max-width: 700px) {
+  .categories_place_add-new  {
+    grid-template-columns: 1fr;
+  }
+}

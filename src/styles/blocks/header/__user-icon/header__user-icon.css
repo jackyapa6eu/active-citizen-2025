@@ -1,0 +1,22 @@
+.header__user-icon {
+  position: relative;
+  width: 65px;
+  height: 60px;
+  background-image: url('../../../images/header__user-icon.svg');
+  background-size: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__user-icon  {
+    width: 45px;
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__user-icon  {
+    width: 30px;
+    height: 30px;
+  }
+}

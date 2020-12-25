@@ -169,6 +169,7 @@ function getMaxLength() {
           <p className="add-new__image-text">Изображение публикации</p>
         </label>
         <textarea className="add-new__input" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}></textarea>
+        <h3 className="add-new__poem-title">{title}</h3>
         <p className="add-new__poem-text">{text}</p>
         <button className="button button_withborder add-new__button" type="button" onClick={translate}>Перевести</button>
         <div className="add-new__container">

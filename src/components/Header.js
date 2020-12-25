@@ -13,9 +13,8 @@ import classNames from 'classnames';
 function Header({setUser}) {
   let location = useLocation();
   const user = React.useContext(UserContext);
-  
+  const [isUserOpened, setIsUserOpened] = React.useState(false);
   React.useEffect(() => {
-    console.log(location);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   function signOut() {
     firebase.auth().signOut().then(function() {
@@ -26,8 +25,8 @@ function Header({setUser}) {
     });
   }
 
-  const logContainerSelectors = classNames(
-    'header__log-container',
+  const userIconSelectors = classNames(
+    'header__user-icon',
     {
       'hidden' : (!user.uid || location.pathname === "/user/sign-in" || location.pathname === "/user/sign-up")
     }
@@ -39,16 +38,31 @@ function Header({setUser}) {
       'hidden': (user.uid || location.pathname === "/user/sign-in" || location.pathname === "/user/sign-up")
     }
   )
+
+  const loginContainerSelectors = classNames (
+    'header__log-container',
+    {
+      hidden: !isUserOpened
+    }
+  )
+
+  function handleUserIconClick() {
+    setIsUserOpened(!isUserOpened);
+  }
+
   return (
     <header className="header">
       <Link className="header__logo-link" to="/">
         <img className="header__logo" src={headerLogo} alt="Логотип Гражданин-поэт"/>
         <p className="header__logo-title">гражданин-поэт</p>
       </Link>
-      <div className={logContainerSelectors}>
-        <span className="header__login">{user.name}</span>
-        <button onClick={signOut} className="button button_white">Выход</button>
+      <div className={userIconSelectors} onClick={handleUserIconClick}>
+        <div className={loginContainerSelectors}>
+          <span className="header__user-name">{user.secondName} {user.name}</span>
+          <button onClick={signOut} className="header__quite-btn">Выход</button>
+        </div>
       </div>
+
       <div className={buttonContainerSelectors}>
         <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
         <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>

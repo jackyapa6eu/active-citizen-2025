@@ -18,11 +18,12 @@
 @import url(./styles/blocks/header/__logo/header__logo.css);
 @import url(./styles/blocks/header/__logo-title/header__logo-title.css);
 @import url(./styles/blocks/header/__log-container/header__log-container.css);
-@import url(./styles/blocks/header/__login/header__login.css);
+@import url(./styles/blocks/header/__user-name/header__user-name.css);
+@import url(./styles/blocks/header/__user-icon/header__user-icon.css);
 @import url(./styles/blocks/header/__image-button/header__image-button.css);
 @import url(./styles/blocks/header/__button-container/header__button-container.css);
 @import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
-
+@import url(./styles/blocks/header/__quite-btn/header__quite-btn.css);
 
 @import url(./styles/blocks/main/main.css);
 
@@ -69,6 +70,7 @@
 @import url(./styles/blocks/user/__pass-label/_focused-pass/user__pass-label_focused-pass.css);
 @import url(./styles/blocks/user/__button/user__button.css);
 @import url(./styles/blocks/user/__link/user__link.css);
+@import url(./styles/blocks/user/__error/user__error.css);
 
 @import url(./styles/blocks/add-new/add-new.css);
 @import url(./styles/blocks/add-new/__form/add-new__form.css);

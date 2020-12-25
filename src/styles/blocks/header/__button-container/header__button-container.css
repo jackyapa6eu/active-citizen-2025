@@ -3,3 +3,9 @@
   grid-template-columns: repeat(2, max-content);
   grid-column-gap: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .header__button-container  {
+    grid-column-gap: 0;
+  }
+}

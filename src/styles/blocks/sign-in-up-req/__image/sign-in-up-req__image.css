@@ -7,7 +7,7 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .sign-in-up-req__image {
     grid-row: 1/2;
     grid-column: 1/2;

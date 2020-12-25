@@ -109,7 +109,7 @@ function SignUpForm({setIsSuccessed}) {
         maxLength="40"
         required
       />
-      <span>{errorMsg}</span>
+      <span className="user__error">{errorMsg}</span>
       <label className='user__pass-label'>
         <input 
           className="user__input user__input_password" 
