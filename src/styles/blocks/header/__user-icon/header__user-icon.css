@@ -1,0 +1,7 @@
+.header__user-icon {
+  position: relative;
+  width: 65px;
+  height: 60px;
+  background-image: url('../../../images/header__user-icon.svg');
+  cursor: pointer;
+}

@@ -18,7 +18,8 @@
 @import url(./styles/blocks/header/__logo/header__logo.css);
 @import url(./styles/blocks/header/__logo-title/header__logo-title.css);
 @import url(./styles/blocks/header/__log-container/header__log-container.css);
-@import url(./styles/blocks/header/__login/header__login.css);
+@import url(./styles/blocks/header/__user-name/header__user-name.css);
+@import url(./styles/blocks/header/__user-icon/header__user-icon.css);
 @import url(./styles/blocks/header/__image-button/header__image-button.css);
 @import url(./styles/blocks/header/__button-container/header__button-container.css);
 @import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
