@@ -59,7 +59,7 @@ function Header({setUser}) {
       <div className={userIconSelectors} onClick={handleUserIconClick}>
         <div className={loginContainerSelectors}>
           <span className="header__user-name">{user.secondName} {user.name}</span>
-          <button onClick={signOut} className="button button_white">Выход</button>
+          <button onClick={signOut} className="header__quite-btn">Выход</button>
         </div>
       </div>
 

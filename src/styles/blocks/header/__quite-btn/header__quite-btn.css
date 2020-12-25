@@ -1,0 +1,10 @@
+.header__quite-btn {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: start;
+  color: #5D7DAD;
+  padding: 0;
+}

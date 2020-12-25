@@ -23,6 +23,7 @@
 @import url(./styles/blocks/header/__image-button/header__image-button.css);
 @import url(./styles/blocks/header/__button-container/header__button-container.css);
 @import url(./styles/blocks/header/__button-sing-up/header__button-sing-up.css);
+@import url(./styles/blocks/header/__quite-btn/header__quite-btn.css);
 
 
 @import url(./styles/blocks/main/main.css);
