@@ -1,10 +1,11 @@
 .user__image {
+  width: 100%;
   object-fit: contain;
   object-position: top;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .user__image {
-    width: 61%;
+    width: 80%;
   }
 }

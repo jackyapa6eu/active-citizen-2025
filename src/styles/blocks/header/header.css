@@ -3,8 +3,15 @@
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  margin: 0 auto 30px;
+  box-sizing: border-box;
+  padding: 30px 39px;
+  margin: 0 auto;
+  border-bottom: 1px solid #DDE0FF;
+  font-family: 'Alegreya', sans-serif;
+}
 
-  font-family: 'Open Sans Condensed', sans-serif;
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 15px 39px;
+  }
 }

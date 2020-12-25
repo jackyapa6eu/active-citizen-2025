@@ -1,6 +1,20 @@
 .opened-petition__author {
-  font-size: 23px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
   line-height: 140%;
-  color: #02214F;
   margin: 0 0 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .opened-petition__author {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .opened-petition__author {
+    font-size: 16px;
+  }
 }

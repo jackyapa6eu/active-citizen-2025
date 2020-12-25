@@ -21,7 +21,7 @@
   outline: 2px solid #8E9295;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .user__input {
     height: 30px;
     padding: 5px 10px;

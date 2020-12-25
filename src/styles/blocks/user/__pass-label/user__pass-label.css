@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .user__pass-label {
     margin-bottom: 25px;
   }

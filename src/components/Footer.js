@@ -17,7 +17,8 @@ function Footer() {
           <li className="footer__list">Александр Распертов</li>
           <li className="footer__list">Виктория Велимирова</li>
         </ul>
-        <span className="footer__creators">Создано в рамках хакатона от Яндекс.Практикума в 2020 г.</span>
+        <hr className="footer__line" />
+        <span className="footer__creators">Хакатон Яндекс.Практикума, 2020&nbsp;г.</span>
       </div>
     </footer>
   );

@@ -1,21 +1,19 @@
 .petitions {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 30px;
-  font-family: 'Alegreya', sans-serif;
+  box-sizing: border-box;
+  padding: 0 39px;
+  font-family: "Alegreya", sans-serif;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 700px) {
   .petitions {
-    grid-template-columns: repeat(2, minmax(280px, 350px));
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .petitions {
-    grid-template-columns: repeat(1, minmax(280px, 350px));
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    grid-gap: 25px;
   }
 }

@@ -20,18 +20,14 @@ function Petition({petition, showDate}) {
           <div className="petitions__container petitions__container_title">
             <h3 className="petitions__title">{petition.poem.title}</h3>
             <div className="petitions__container petitions__container_rating">
-              <div className="flex">
-                <button className="btn btn_like"></button>
-                <p className="petitions__rating">{likes.length}</p>
-              </div>
-              <div className="flex">
-                <button className="btn btn_dislike"></button>
-                <p className="petitions__rating">{disLikes.length}</p>
-              </div>
+              <button className="btn btn_like"></button>
+              <p className="petitions__rating">{likes.length}</p>
+              <button className="btn btn_dislike"></button>
+              <p className="petitions__rating">{disLikes.length}</p>
             </div>
             <span className="petitions__data">{showDate(petition.date)}</span>
           </div>
-          <img src={petition.imgLink} alt="" className="petitions__image"/>
+          <img src={petition.imgLink} alt="" className="petitions__image" />
         </div>
         )
 }

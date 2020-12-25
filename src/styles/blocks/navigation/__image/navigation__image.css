@@ -1,0 +1,6 @@
+.navigation__image {
+}
+
+.navigation__image:nth-child(2) {
+  transform: rotate(180deg);
+}
