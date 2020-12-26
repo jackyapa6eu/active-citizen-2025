@@ -36,7 +36,7 @@
   box-sizing: border-box;
   border: solid 2px #DCE1FE;
   border-radius: 5px;
-  width: 250px;
+  width: 100%;
   transition: all .5s ease;
 }
 
@@ -76,3 +76,13 @@
     font-size: 16px;
   }
 }
+
+/* Медиазапросы для категорий при добавлении нового поста */
+
+@media screen and (max-width: 900px) {
+  .categories_place_add-new .categories__item {
+
+  }
+}
+
+/* Медиазапросы для категорий при добавлении нового поста */

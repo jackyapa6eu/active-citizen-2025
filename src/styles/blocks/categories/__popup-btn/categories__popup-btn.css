@@ -11,6 +11,7 @@
   background-size: 15px 25px;
   background-repeat: no-repeat;
   background-position: left center;
+  cursor: pointer;
 }
 
 .catigories__mobile-container_opened .categories__popup-btn {

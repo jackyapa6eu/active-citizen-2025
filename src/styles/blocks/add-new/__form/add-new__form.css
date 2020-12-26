@@ -1,10 +1,10 @@
 .add-new__form {
   width: 100%;
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, max-content);
-  grid-gap: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 50px auto 60px;
   box-sizing: border-box;
   padding: 0 39px;
@@ -14,11 +14,20 @@
   color: #5D7DAD;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .add-new__form {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__form {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .add-new__form {
     padding: 0 20px;
   }
 }

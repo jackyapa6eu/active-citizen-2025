@@ -40,6 +40,7 @@
 @import url(./styles/blocks/categories/__item/_active/categories__item_active.css);
 @import url(./styles/blocks/categories/__mobile-container/catigories__mobile-container.css);
 @import url(./styles/blocks/categories/__mobile-container/_opened/catigories__mobile-container_opened.css);
+@import url(./styles/blocks/categories/__mobile-container/_place/categories__mobile-container_place_add-new.css);
 @import url(./styles/blocks/categories/__popup-btn/categories__popup-btn.css);
 @import url(./styles/blocks/categories/__selected/categories__selected.css);
 
@@ -83,13 +84,19 @@
 @import url(./styles/blocks/add-new/__image/add-new__image.css);
 @import url(./styles/blocks/add-new/__image/_loaded/add-new__image_loaded.css);
 @import url(./styles/blocks/add-new/__image-text/add-new__image-text.css);
+@import url(./styles/blocks/add-new/__input-wrapper/add-new__input-wrapper.css);
 @import url(./styles/blocks/add-new/__input/add-new__input.css);
+@import url(./styles/blocks/add-new/__clear-btn/add-new__clear-btn.css);
+@import url(./styles/blocks/add-new/__translate-btn-small/add-new__translate-btn-small.css);
+@import url(./styles/blocks/add-new/__poem/add-new__poem.css);
+@import url(./styles/blocks/add-new/__categories-container/add-new__categories-container.css);
 @import url(./styles/blocks/add-new/__poem-title/add-new__poem-title.css);
 @import url(./styles/blocks/add-new/__poem-text/add-new__poem-text.css);
 @import url(./styles/blocks/add-new/__file-input/add-new__file-input.css);
 @import url(./styles/blocks/add-new/__container/add-new__container.css);
 @import url(./styles/blocks/add-new/__button/add-new__button.css);
 @import url(./styles/blocks/add-new/__button/_publish/add-new__button_publish.css);
+@import url(./styles/blocks/add-new/__button/_translate/add-new__button_translate.css);
 @import url(./styles/blocks/add-new/__text-button/add-new__text-button.css);
 
 /* @import url(./styles/blocks/navigation/navigation.css);
