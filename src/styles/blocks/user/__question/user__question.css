@@ -7,8 +7,3 @@
   color:#8E9295;
 }
 
-@media screen and (max-width: 1024px) {
-  .user__question  {
-    display: none;
-  }
-}

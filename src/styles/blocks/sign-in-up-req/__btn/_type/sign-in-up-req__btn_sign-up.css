@@ -13,9 +13,16 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .sign-in-up-req__btn_sign-up {
-    margin: 20px 0 47px;
-    justify-self: center;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in-up-req__btn_sign-up {
+    width: 69%;
+    margin-bottom: 15px;
+    margin-top: 0;
   }
 }

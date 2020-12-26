@@ -1,0 +1,9 @@
+.user__question_place_user {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .user__question_place_user  {
+    display: none;
+  }
+}

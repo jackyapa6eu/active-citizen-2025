@@ -5,7 +5,7 @@ import {
   Link
 } from "react-router-dom";
 
-function SignInUpReq({closeRequest}) {
+function SignInUpReq() {
   const user = React.useContext(UserContext);
   return (
     <section className="sign-in-up-req">
@@ -15,7 +15,10 @@ function SignInUpReq({closeRequest}) {
           {'Регистрируйся, делись своим мнением в форме поэзии и получай реакцию со всей страны.'}
         </p>
         {user.uid && <Link to="/add-new" className="button sign-in-up-req__btn sign-in-up-req__btn_publish">Новая публикация</Link>}
-        {!user.uid && <Link to="/user/sign-up" className="button sign-in-up-req__btn sign-in-up-req__btn_sign-up" type="button">Регистрация</Link>}
+        <div className="sign-in-up-req__btns-wrapper">
+          {!user.uid && <Link to="/user/sign-up" className="button sign-in-up-req__btn sign-in-up-req__btn_sign-up" type="button">Регистрация</Link>}
+          {!user.uid && <Link to="/user/sign-in" className="button sign-in-up-req__btn sign-in-up-req__btn_sign-in" type="button">Вход</Link>}
+        </div>
         <img className="sign-in-up-req__image" src={people} alt="#"/>
       </div>
     </section>

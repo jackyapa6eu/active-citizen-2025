@@ -1,0 +1,35 @@
+.header__sign-in-mobile-icon {
+  width: 36px;
+  height: 36px;
+  background-image: url(../../../images/header__sign-in-mobile-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 801px) {
+  .header__sign-in-mobile-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__sign-in-mobile-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__sign-in-mobile-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__sign-in-mobile-icon {
+    width: 26px;
+    height: 26px;;
+  }
+}

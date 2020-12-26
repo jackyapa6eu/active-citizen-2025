@@ -1,0 +1,9 @@
+.user__question_place_header {
+
+}
+
+@media screen and (max-width: 800px) {
+  .user__question_place_header  {
+    display: none;
+  }
+}

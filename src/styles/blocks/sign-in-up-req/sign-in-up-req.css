@@ -3,5 +3,19 @@
   background: #F4F5FF;
   font-family: 'Ubuntu', sans-serif;
   color: #02214F;
-  margin-bottom: 40px;
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .sign-in-up-req {
+    min-height: calc(100vh - 150px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in-up-req {
+    margin-bottom: 40px;
+  }
 }

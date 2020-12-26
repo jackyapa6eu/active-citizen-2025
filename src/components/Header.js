@@ -67,11 +67,12 @@ function Header({setUser}) {
         <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
         <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
       </div>
+        <Link to="/user/sign-in" className="header__sign-in-mobile-icon"/>
       {location.pathname === "/user/sign-in" && 
-        <UserQuestion question={'Нет аккаунта? '} path={'/user/sign-up'} linkText={'Регистрация'}/>
+        <UserQuestion question={'Нет аккаунта? '} path={'/user/sign-up'} linkText={'Регистрация'} place={'header'}/>
       }
       {location.pathname === "/user/sign-up" && 
-        <UserQuestion question={'Уже есть аккаунт? '} path={'/user/sign-in'} linkText={'Войти'}/>
+        <UserQuestion question={'Уже есть аккаунт? '} path={'/user/sign-in'} linkText={'Войти'} place={'header'}/>
       }
     </header>
   );

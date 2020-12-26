@@ -1,0 +1,15 @@
+.sign-in-up-req__btns-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in-up-req__btns-wrapper {
+    padding-top: 30px;
+    padding-bottom: 47px;
+    flex-direction: column;
+  }
+}
