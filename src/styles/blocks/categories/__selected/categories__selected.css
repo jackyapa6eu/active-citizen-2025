@@ -1,0 +1,30 @@
+.categories__selected {
+  line-height: 120%;
+  color: #5D7DAD;
+  font-family: 'Ubuntu';
+  font-size: 22px;
+  position: relative;
+}
+
+.categories__selected::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background: #632EBA;
+  z-index: -1;
+  width: 100%;
+  transition: all .5s ease;
+  height: 4px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .categories__popup-btn {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+  .categories__selected::after {
+    height: 2px;
+  }
+}

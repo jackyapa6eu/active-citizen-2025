@@ -6,3 +6,9 @@
   align-items: center;
   margin: 60px auto 80px;
 }
+
+@media screen and (max-width: 550px) {
+  .categories_place_feed {
+    display: none;
+  }
+}

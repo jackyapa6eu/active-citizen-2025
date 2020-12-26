@@ -31,6 +31,7 @@
 @import url(./styles/blocks/categories/categories.css);
 @import url(./styles/blocks/categories/_place/categories_place_feed.css);
 @import url(./styles/blocks/categories/_place/categories_place_add-new.css);
+@import url(./styles/blocks/categories/_place/categories_place_feed-mobile.css);
 @import url(./styles/blocks/categories/__item/categories__item.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_all.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_culture.css);
@@ -38,6 +39,10 @@
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_social.css);
 @import url(./styles/blocks/categories/__item/_content/categories__item_content_transport.css);
 @import url(./styles/blocks/categories/__item/_active/categories__item_active.css);
+@import url(./styles/blocks/categories/__mobile-container/catigories__mobile-container.css);
+@import url(./styles/blocks/categories/__mobile-container/_opened/catigories__mobile-container_opened.css);
+@import url(./styles/blocks/categories/__popup-btn/categories__popup-btn.css);
+@import url(./styles/blocks/categories/__selected/categories__selected.css);
 
 @import url(./styles/blocks/petitions/petitions.css);
 @import url(./styles/blocks/petitions/__item/petitions__item.css);
