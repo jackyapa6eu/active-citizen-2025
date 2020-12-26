@@ -1,15 +1,14 @@
 .add-new__input {
-  grid-row: 3/5;
   width: 100%;
-  border: 2px solid rgba(28, 69, 131, 0.5);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 35px 20px 20px;
   border-radius: 5px;
   font-size: 20px;
   line-height: 140%;
-  margin: 25px 0 30px;
+  border: 2px solid rgba(28, 69, 131, 0.5);
   resize: none;
   color: #02214F;
+  min-height: 100%;
 }
 
 .add-new__input:hover {
@@ -17,13 +16,10 @@
   outline: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
   .add-new__input {
     font-size: 16px;
-    height: 120px;
-    min-height: auto;
     border-radius: 5px 5px 0 0;
-    margin: 25px 0 0;
   }
 
   .add-new__input:hover {

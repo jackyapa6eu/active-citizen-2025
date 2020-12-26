@@ -1,6 +1,6 @@
 .add-new__text-button {
   max-width: 440px;
-  grid-column: 1/2;
+
   justify-self: flex-end;
   align-self: center;
   font-family: 'Ubuntu', sans-serif;
@@ -8,10 +8,15 @@
   line-height: 140%;
   color: rgba(22, 63, 124, 0.5);
   margin: 0;
-  margin-top: 40px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  .add-new__text-button {
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .add-new__text-button {
     display: none;
   }

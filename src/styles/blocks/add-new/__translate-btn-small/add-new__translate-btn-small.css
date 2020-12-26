@@ -1,0 +1,17 @@
+.add-new__translate-btn-small {
+  position: absolute;
+  width: 19px;
+  height: 23px;
+  background-image: url(../../../images/add-new__translate-btn-small.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 13px;
+  bottom: 13px;
+}
+
+@media screen and (min-width: 801px) {
+  .add-new__translate-btn-small {
+    display: none;
+  }
+}

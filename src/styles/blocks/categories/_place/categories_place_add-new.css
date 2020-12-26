@@ -1,14 +1,26 @@
 .categories_place_add-new {
+  width: 90%;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: fit-content;
   gap: 10px;
 }
 
 @media screen and (max-width: 700px) {
   .categories_place_add-new  {
-    grid-template-columns: 1fr;
+
+  }
+}
+
+@media screen and (max-width: 551px) {
+  .categories_place_add-new  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  .categories_place_add-new {
+    
   }
 }

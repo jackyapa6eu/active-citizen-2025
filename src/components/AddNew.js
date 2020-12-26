@@ -9,6 +9,7 @@ import {
   useHistory
 } from "react-router-dom";
 import classNames from 'classnames';
+import { categoriesMobileData } from '../utils/categories';
 
 function AddNew() {
   const user = React.useContext(UserContext);
@@ -21,6 +22,16 @@ function AddNew() {
   const [newPetitionImg, setNewPetitionImg] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('all');
   const history = useHistory();
+
+  const [isMobileCategoriesOpened, setisMobileCategoriesOpened] = React.useState(false);
+
+  const catigoriesMobileContainerSelectors = classNames (
+    'catigories__mobile-container',
+    'categories__mobile-container_place_add-new',
+    {
+      'catigories__mobile-container_opened': isMobileCategoriesOpened
+    }
+  )
 
   const buttonSelectors = classNames(
     'button add-new__button add-new__button_publish',
@@ -42,6 +53,10 @@ function AddNew() {
   React.useEffect(() => {
     checkPetitionData();
   }, [title, text, newPetitionImg, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  function toggleCategories() {
+    setisMobileCategoriesOpened(!isMobileCategoriesOpened);
+  }
 
   function findPoem(arr, str) {
     let inputArr = str.trim().split(' ');
@@ -114,6 +129,12 @@ function AddNew() {
       setisDisabled(false);
     }
   }
+
+  function handleClearBtn() {
+    setTitle('');
+    setText('');
+    inputRef.current.value = '';
+  }
 /*
 function getMaxLength() {
   let maxStrLength = 0;
@@ -162,16 +183,29 @@ function getMaxLength() {
   return (
     <section className="add-new">
       <form className="add-new__form" onSubmit={handleSubmit}>
-        <p className="add-new__select-cat">Выберите категорию публикации</p>
-        <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} place={'add-new'}/>
+        <div className="add-new__categories-container">
+          <p className="add-new__select-cat">Выберите категорию публикации</p>
+          <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} place={'add-new'}/>
+        </div>
+        <div className={catigoriesMobileContainerSelectors}>
+          <span className="categories__popup-btn" onClick={toggleCategories}>Темы</span>
+          <span className="categories__selected">{categoriesMobileData[selectedCategory]}</span>
+          <Categories setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} place={'feed-mobile'}/>
+        </div>
         <label className={addNewImageSelectors} style={{backgroundImage: 'url(' + newPetitionImg + ')',}}>
           <input className="add-new__file-input" type="file" id="file" ref={fileInputRef} onChange={previewFiles}/>
           <p className="add-new__image-text">Изображение публикации</p>
         </label>
-        <textarea className="add-new__input" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}></textarea>
-        <h3 className="add-new__poem-title">{title}</h3>
-        <p className="add-new__poem-text">{text}</p>
-        <button className="button button_withborder add-new__button" type="button" onClick={translate}>Перевести</button>
+        <label className="add-new__input-wrapper">
+          <div className="add-new__clear-btn" onClick={handleClearBtn}/>
+          <div className="add-new__translate-btn-small" onClick={translate}/>
+          <textarea className="add-new__input" placeholder="Введите свой запрос" ref={inputRef} required onChange={checkPetitionData}></textarea>
+        </label>
+        <article className="add-new__poem">
+          <h3 className="add-new__poem-title">{title}</h3>
+          <p className="add-new__poem-text">{text}</p>
+        </article>
+        <button className="button button_withborder add-new__button add-new__button_translate" type="button" onClick={translate}>Перевести</button>
         <div className="add-new__container">
           <p className="add-new__text-button">Если перевод текста и вид фотографии вас устраивает, нажмите «Опубликовать». Или повторите процедуру.</p>
           <button className={buttonSelectors} type="submit" disabled={isDisabled}>Опубликовать</button>

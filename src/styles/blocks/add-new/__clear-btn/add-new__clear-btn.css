@@ -1,0 +1,18 @@
+.add-new__clear-btn {
+  position: absolute;
+  width: 24px;
+  height: 21px;
+  background-image: url(../../../images/add-new__clear-btn.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 15px;
+  top: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 801px) {
+  .add-new__clear-btn {
+    display: none;
+  }
+}

@@ -9,6 +9,7 @@
   border-radius: 10px;
   text-align: start;
   padding: 30px 20px 24px 20px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 1024px) {
