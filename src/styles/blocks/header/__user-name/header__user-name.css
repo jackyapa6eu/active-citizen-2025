@@ -17,6 +17,13 @@
   border-bottom: 1px solid #5D7DAD;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__user-name  {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .header__user-name  {
     font-size: 16px;

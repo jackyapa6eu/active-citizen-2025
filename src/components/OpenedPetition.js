@@ -108,9 +108,9 @@ function OpenedPetition({showDate}) {
         <p className="opened-petition__text">{text}</p>
         <span className="opened-petition__data">{date}</span>
         <div className="opened-petition__block">
-          <button className="btn btn_like opened-petition__btn"></button>
+          <button className="btn btn_like opened-petition__btn" onClick={handleLikeClick}></button>
           <p className="opened-petition__rating">{likes.length}</p>
-          <button className="btn btn_dislike opened-petition__btn"></button>
+          <button className="btn btn_dislike opened-petition__btn" onClick={handleDislikeLikeClick}></button>
           <p className="opened-petition__rating">{disLikes.length}</p>
         </div>
       </div>
