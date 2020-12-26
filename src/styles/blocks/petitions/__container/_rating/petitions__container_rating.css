@@ -1,7 +1,6 @@
 .petitions__container_rating {
   grid-column: 1/2;
   grid-row: 2/3;
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 5px;
 }

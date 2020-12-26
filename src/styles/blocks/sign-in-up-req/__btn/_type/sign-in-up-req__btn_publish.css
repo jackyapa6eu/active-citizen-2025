@@ -1,5 +1,19 @@
 .sign-in-up-req__btn_publish {
-  width: 180px;
-  justify-self: center;
+  width: 190px;
+  font-size: 19px;
   margin: 40px 0 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sign-in-up-req__btn_publish {
+    width: 180px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sign-in-up-req__btn_publish {
+    justify-self: center;
+  }
 }

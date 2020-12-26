@@ -4,19 +4,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, max-content);
-  grid-gap: 20px 30px;
-  margin: 0 auto 60px;
-  padding: 0;
-  font-family: 'Lora', sans-serif;
+  grid-gap: 0 30px;
+  margin: 50px auto 60px;
+  box-sizing: border-box;
+  padding: 0 39px;
+  font-family: 'Alegreya', sans-serif;
   font-size: 16px;
   line-height: 140%;
-  color: #8E9295;
+  color: #5D7DAD;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .add-new__form {
     grid-template-columns: 1fr;
     grid-gap: 0;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }

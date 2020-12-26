@@ -1,6 +1,19 @@
 .opened-petition__text {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 120%;
   margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .opened-petition__text {
+    font-size: 18px;
+    margin: 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .opened-petition__text {
+    font-size: 16px;
+  }
 }

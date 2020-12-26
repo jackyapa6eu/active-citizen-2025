@@ -3,9 +3,10 @@
   margin-bottom: 40px;
   background: #FDFDFD;
   width: 100%;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .user__pass-label {
     margin-bottom: 25px;
   }

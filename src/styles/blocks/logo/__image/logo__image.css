@@ -3,7 +3,14 @@
   height: 70px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+  .logo__image {
+    width: 48px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .logo__image {
     width: 45px;
     height: 40px;

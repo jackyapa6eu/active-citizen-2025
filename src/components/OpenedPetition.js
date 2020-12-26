@@ -102,16 +102,18 @@ function OpenedPetition({showDate}) {
   return (
     <article className={`opened-petition opened-petition_type_${category}`}>
       <div className="opened-petition__container">
-        <div className="opened-petition__container opened-petition__container_left">
-          <h3 className="opened-petition__title">{title}</h3>
-          <p className="opened-petition__text">{text}</p>
-        </div>
-        <div className="opened-petition__container opened-petition__container_right">
-          <p className="opened-petition__date">{date}</p>
-          <p className="opened-petition__author">{author}</p>
+        <p className="opened-petition__author">{author}</p>
+        <div className="opened-petition__image" style={{backgroundImage: 'url(' + imgUrl + ')',}}></div>
+        <h3 className="opened-petition__title">{title}</h3>
+        <p className="opened-petition__text">{text}</p>
+        <span className="opened-petition__data">{date}</span>
+        <div className="opened-petition__block">
+          <button className="btn btn_like opened-petition__btn" onClick={handleLikeClick}></button>
+          <p className="opened-petition__rating">{likes.length}</p>
+          <button className="btn btn_dislike opened-petition__btn" onClick={handleDislikeLikeClick}></button>
+          <p className="opened-petition__rating">{disLikes.length}</p>
         </div>
       </div>
-      <div className="opened-petition__image" style={{backgroundImage: 'url(' + imgUrl + ')',}}></div>
     </article>
   );
 }

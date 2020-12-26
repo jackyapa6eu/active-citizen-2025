@@ -9,10 +9,16 @@
   margin: 0 0 0 30px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+  .logo__title {
+    font-size: 15px;
+    margin: 0 0 0 13px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .logo__title {
     min-width: 100%;
-    font-size: 15px;
     margin: 0 0 0 5px;
   }
 }

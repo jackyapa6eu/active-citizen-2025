@@ -6,10 +6,16 @@
   list-style: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+  .footer__lists {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .footer__lists {
     width: 100%;
-    border-top: 1px solid #F4F5FF;
+    border-top: 1px solid #f4f5ff;
     padding-top: 24px;
     margin: 0;
   }

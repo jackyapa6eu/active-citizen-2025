@@ -4,9 +4,9 @@
   line-height: 140%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .footer__list {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
   }
 }

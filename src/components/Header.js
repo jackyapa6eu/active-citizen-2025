@@ -71,7 +71,7 @@ function Header({setUser}) {
         <UserQuestion question={'Нет аккаунта? '} path={'/user/sign-up'} linkText={'Регистрация'}/>
       }
       {location.pathname === "/user/sign-up" && 
-        <UserQuestion question={'Уже есть аккаунт? '} path={'/user/sign-in'} linkText={'Войдите'}/>
+        <UserQuestion question={'Уже есть аккаунт? '} path={'/user/sign-in'} linkText={'Войти'}/>
       }
     </header>
   );

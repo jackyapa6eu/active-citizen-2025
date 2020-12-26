@@ -1,26 +1,14 @@
 .opened-petition__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 20px 50px 20px;
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 5px;
 }
 
-.opened-petition_type_culture .opened-petition__block {
-  background: #F66D4F;
-  color: black;
-}
-
-.opened-petition_type_politics .opened-petition__block {
-  background: #4F92F6;
-  color: white;
-}
-
-.opened-petition_type_social .opened-petition__block {
-  background: #F6DD4F;
-  color: black;
-}
-
-.opened-petition_type_transport .opened-petition__block {
-  background: #8E4FF6;
-  color: white;
+@media screen and (max-width: 1024px) {
+  .opened-petition__block {
+    justify-content: end;
+  }
 }

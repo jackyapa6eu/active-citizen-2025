@@ -1,3 +1,9 @@
 .add-new__button {
-  width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .add-new__button {
+    justify-self: center;
+    margin-top: 20px;
+  }
 }

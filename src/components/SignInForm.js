@@ -71,7 +71,7 @@ function SignInForm() {
         <input className="user__input user__input_password" type="password" placeholder="Пароль" ref={signInPassInputRef} required/>
         <button className={togglePassBtnSelectors} type="button" onClick={togglePassSignIn}/>
       </label>
-      <span>{errorMsg}</span>
+      <span className="user__error">{errorMsg}</span>
       <button className="button user__button" type="submit">Войти</button>          
   </form>
   );

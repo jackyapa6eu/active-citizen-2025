@@ -5,7 +5,13 @@
   margin: 50px 0 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+  .sign-in-up-req__title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .sign-in-up-req__title {
     font-size: 18px;
     margin: 0;
