@@ -1,9 +1,3 @@
 .header__button-sing-up {
   width: 190px;
 }
-
-@media screen and (max-width: 1024px) {
-  .header__button-sing-up {
-    display: none;
-  }
-}

@@ -11,6 +11,6 @@
   .sign-in-up-req__image {
     grid-row: 1/2;
     grid-column: 1/2;
-    height: auto;
+    height: 40vh;
   }
 }

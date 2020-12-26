@@ -1,7 +1,7 @@
 const categoriesData = [
   { 
     value: 'all',
-    text: 'Все',
+    text: 'Другое',
   },
   { 
     value: 'culture',

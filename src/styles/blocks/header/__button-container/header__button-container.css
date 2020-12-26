@@ -9,3 +9,9 @@
     grid-column-gap: 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .header__button-container {
+    display: none;
+  }
+}
