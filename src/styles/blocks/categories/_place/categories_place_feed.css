@@ -1,7 +1,7 @@
 .categories_place_feed {
   width: 100%;
   max-width: 1200px;
-  display: grid;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 60px auto 80px;
