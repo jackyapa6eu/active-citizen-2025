@@ -1,0 +1,7 @@
+.catigories__mobile-container_opened {
+
+}
+
+.catigories__mobile-container_opened .categories_place_feed-mobile {
+  display: grid;
+}

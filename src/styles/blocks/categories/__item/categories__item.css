@@ -1,3 +1,4 @@
+/* Общие стили категорий */
 .categories__item {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -9,6 +10,8 @@
   position: relative;
   z-index: 2;
 }
+
+/* Стили для категорий в ленте */
 
 .categories_place_feed .categories__item::after {
   content: '';
@@ -26,6 +29,8 @@
   width: 100%;
 }
 
+/* Стили для категорий при добавлении новой карточки */
+
 .categories_place_add-new .categories__item {
   padding: 10px 0;
   box-sizing: border-box;
@@ -38,4 +43,36 @@
 .categories_place_add-new .categories__item:hover {
   background: #632EBA;
   color: #F4F5FF;
+}
+
+/* Стили для категорий в ленте на мобильной версии*/
+
+.categories_place_feed-mobile .categories__item {
+  font-size: 22px;
+  text-align: start;
+}
+
+
+@media screen and (max-width: 870px) {
+  .categories__item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .categories__item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories__item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .categories_place_feed-mobile .categories__item {
+    font-size: 16px;
+  }
 }
