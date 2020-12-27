@@ -7,6 +7,12 @@
   text-align: start;
   color: #5D7DAD;
   padding: 0;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header__quite-btn:hover {
+  color: #632EBA;
 }
 
 @media screen and (max-width: 1024px) {

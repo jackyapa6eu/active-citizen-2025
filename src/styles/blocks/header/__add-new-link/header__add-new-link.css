@@ -1,0 +1,38 @@
+.header__add-new-link {
+  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #5D7DAD;
+  position: relative;
+  margin-bottom: 32px;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.header__add-new-link:hover {
+  color: #632EBA;
+}
+
+.header__add-new-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  border-bottom: 1px solid #5D7DAD;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__add-new-link  {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__add-new-link  {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
