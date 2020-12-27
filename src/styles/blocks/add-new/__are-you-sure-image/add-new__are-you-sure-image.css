@@ -1,0 +1,18 @@
+.add-new__are-you-sure-image {
+  width: 68px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .add-new__are-you-sure-image {
+    width: 60px;
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .add-new__are-you-sure-image {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+}

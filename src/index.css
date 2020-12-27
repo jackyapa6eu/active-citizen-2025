@@ -12,6 +12,7 @@
 @import url(./styles/blocks/button/_white/button_white.css);
 @import url(./styles/blocks/button/_withborder/button_withborder.css);
 @import url(./styles/blocks/button/_disabled/button_disabled.css);
+@import url(./styles/blocks/button/_place/button_place_are-you-sure.css);
 
 @import url(./styles/blocks/header/header.css);
 @import url(./styles/blocks/header/__logo-link/header__logo-link.css);
@@ -102,13 +103,15 @@
 @import url(./styles/blocks/add-new/__button/_publish/add-new__button_publish.css);
 @import url(./styles/blocks/add-new/__button/_translate/add-new__button_translate.css);
 @import url(./styles/blocks/add-new/__text-button/add-new__text-button.css);
-
-/* @import url(./styles/blocks/navigation/navigation.css);
-@import url(./styles/blocks/navigation/__container/navigation__container.css);
-@import url(./styles/blocks/navigation/__container/_left/navigation__container_left.css);
-@import url(./styles/blocks/navigation/__container/_right/navigation__container_right.css);
-@import url(./styles/blocks/navigation/__image/navigation__image.css);
-@import url(./styles/blocks/navigation/__text/navigation__text.css); */
+@import url(./styles/blocks/add-new/__overlay/add-new__overlay.css);
+@import url(./styles/blocks/add-new/__overlay/_opened/add-new__overlay_opened.css);
+@import url(./styles/blocks/add-new/__success-popup/add-new__success-popup.css);
+@import url(./styles/blocks/add-new/__success-text/popup__success-text.css);
+@import url(./styles/blocks/add-new/__success-image/popup__success-image.css);
+@import url(./styles/blocks/add-new/__are-you-sure-popup/add-new__are-you-sure-popup.css);
+@import url(./styles/blocks/add-new/__are-you-sure-text/add-new__are-you-sure-text.css);
+@import url(./styles/blocks/add-new/__are-you-sure-btns/add-new__are-you-sure-btns.css);
+@import url(./styles/blocks/add-new/__are-you-sure-image/add-new__are-you-sure-image.css);
 
 @import url(./styles/blocks/opened-petition/opened-petition.css);
 @import url(./styles/blocks/opened-petition/__text/opened-petition__text.css);

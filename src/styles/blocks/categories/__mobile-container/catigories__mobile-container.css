@@ -5,9 +5,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
   padding: 0 16vw;
+  padding-top: 30px;
 }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 651px) {
   .catigories__mobile-container {
     display: none;
   }

@@ -1,0 +1,41 @@
+.add-new__are-you-sure-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #DDE0FF;
+  box-shadow: 0px 0px 14px #8D97FF;
+  border-radius: 10px;
+  max-width: 570px;
+  max-height: 410px;
+  width: 40vw;
+  height: 28vw;
+}
+
+@media screen and (max-width: 1250px) {
+  .add-new__are-you-sure-popup {
+    width: 49vw;
+    height: 35vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .add-new__are-you-sure-popup {
+    width: 79vw;
+    height: 59vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-new__are-you-sure-popup {
+    width: 84vw;
+    height: 73vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .add-new__are-you-sure-popup {
+    width: 88vw;
+    height: 99vw;
+  }
+}

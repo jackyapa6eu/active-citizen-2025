@@ -1,0 +1,25 @@
+.add-new__are-you-sure-text {
+  text-align: center;
+  margin: 0;
+  color: #3748A6;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 850px) {
+  .add-new__are-you-sure-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__are-you-sure-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

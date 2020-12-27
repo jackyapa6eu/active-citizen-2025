@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import classNames from 'classnames';
 import { categoriesMobileData } from '../utils/categories';
+import AddNewOverlay from './AddNewOverlay';
 
 function AddNew() {
   const user = React.useContext(UserContext);
@@ -22,7 +23,9 @@ function AddNew() {
   const [newPetitionImg, setNewPetitionImg] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('all');
   const history = useHistory();
-
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [areYouSure, setAreYouSure] = React.useState(false);
+  const [areYouSurePopup, setAreYouSurePopup] = React.useState(false);
   const [isMobileCategoriesOpened, setisMobileCategoriesOpened] = React.useState(false);
 
   const catigoriesMobileContainerSelectors = classNames (
@@ -78,21 +81,27 @@ function AddNew() {
   }
   function handleSubmit(event) {
     event.preventDefault(); 
-    var petitionData = {
-      realText: inputRef.current.value,
-      poem: findPoem(poems, inputRef.current.value),
-      likes: [],
-      dislikes: [],
-      category: selectedCategory,
-      date: getCurrentDate(),
-      imgLink: newPetitionImg,
-      author: user.name
-    };
+    if (areYouSure) {
+      var petitionData = {
+        realText: inputRef.current.value,
+        poem: findPoem(poems, inputRef.current.value),
+        likes: [],
+        dislikes: [],
+        category: selectedCategory,
+        date: getCurrentDate(),
+        imgLink: newPetitionImg,
+        author: user.name
+      };
+  
+      var updates = {};
+      updates['/petitions/' + newPetitionKey] = petitionData;
+      setIsSuccess(true);
+      setTimeout(() => history.push('/'), 2000)
+      return firebase.database().ref().update(updates); 
+    } else {
+      setAreYouSurePopup(true);
+    }
 
-    var updates = {};
-    updates['/petitions/' + newPetitionKey] = petitionData;
-    setTimeout(() => history.push('/'), 1000)
-    return firebase.database().ref().update(updates); 
   }
 
   function translate() {
@@ -123,7 +132,13 @@ function AddNew() {
 
   function checkPetitionData() {
     const regExp = /https?:\/\/w{0,3}[a-z0-9-._~:/?#[\]@!$&'()*+,;=]*#?/gi;
-    if (text === '' || title === '' || inputRef.current.value.length < 3 || !regExp.test(newPetitionImg) || selectedCategory === 'all') {
+    if (
+      text === '' || 
+      title === '' || 
+      inputRef.current.value.length < 3 || 
+      !regExp.test(newPetitionImg) || 
+      selectedCategory === 'all'
+    ) {
       setisDisabled(true);
     } else {
       setisDisabled(false);
@@ -135,53 +150,15 @@ function AddNew() {
     setText('');
     inputRef.current.value = '';
   }
-/*
-function getMaxLength() {
-  let maxStrLength = 0;
-  let moreThenFifty = 0;
-  let moreThenSixty = 0;
-  let moreThenSeventy = 0;
-  let moreThenEighty = 0;
-  let moreThenNinety = 0;
-  for (let i = 0; i < poems.length; i++) {
-    const strArr = poems[i].text.split('\n');
-    for (let j = 0; j < strArr.length; j++) {
 
-      if (strArr[j].length > 50) {
-        moreThenFifty++;
-      }
-      if (strArr[j].length > 60) {
-        moreThenSixty++;
-      }
-      if (strArr[j].length > 70) {
-        moreThenSeventy++;
-      }
-      if (strArr[j].length > 80) {
-        moreThenEighty++;
-      }
-      if (strArr[j].length > 90) {
-        moreThenNinety++;
-      }
-
-      if (strArr[j].length > maxStrLength) {
-        maxStrLength = strArr[j].length;
-        console.log(strArr[j], i);
-      }
-    }
-  }
-  console.log(poems.length);
-  console.log('Количество строк, длинна которых');
-  console.log('>50', moreThenFifty);
-  console.log('>60', moreThenSixty);
-  console.log('>70', moreThenSeventy);
-  console.log('>80', moreThenEighty);
-  console.log('>90', moreThenNinety);
-}
-
-//getMaxLength();
-*/
   return (
     <section className="add-new">
+      <AddNewOverlay 
+        isSuccess={isSuccess} 
+        setAreYouSure={setAreYouSure} 
+        areYouSurePopup={areYouSurePopup}
+        setAreYouSurePopup={setAreYouSurePopup}
+      />
       <form className="add-new__form" onSubmit={handleSubmit}>
         <div className="add-new__categories-container">
           <p className="add-new__select-cat">Выберите категорию публикации</p>
