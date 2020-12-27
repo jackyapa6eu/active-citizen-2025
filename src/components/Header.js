@@ -59,6 +59,7 @@ function Header({setUser}) {
       <div className={userIconSelectors} onClick={handleUserIconClick}>
         <div className={loginContainerSelectors}>
           <span className="header__user-name">{user.secondName} {user.name}</span>
+          <Link className="header__add-new-link">Создать публикацию</Link>
           <button onClick={signOut} className="header__quite-btn">Выход</button>
         </div>
       </div>
@@ -67,7 +68,7 @@ function Header({setUser}) {
         <Link to="/user/sign-in" className="button button_white " type="button">Войти</Link>
         <Link to="/user/sign-up" className="button header__button-sing-up" type="button">Регистрация</Link>
       </div>
-        <Link to="/user/sign-in" className="header__sign-in-mobile-icon"/>
+      {!user.uid && <Link to="/user/sign-in" className="header__sign-in-mobile-icon"/>}
       {location.pathname === "/user/sign-in" && 
         <UserQuestion question={'Нет аккаунта? '} path={'/user/sign-up'} linkText={'Регистрация'} place={'header'}/>
       }

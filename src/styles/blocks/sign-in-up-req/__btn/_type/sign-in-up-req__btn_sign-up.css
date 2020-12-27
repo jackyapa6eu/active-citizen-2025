@@ -3,6 +3,11 @@
   font-size: 19px;
   line-height: 120%;
   margin-bottom: 70px;
+  transition: all .5s ease;
+}
+
+.sign-in-up-req__btn_sign-up:hover {
+  background: #632EBA;
 }
 
 @media screen and (max-width: 1024px) {

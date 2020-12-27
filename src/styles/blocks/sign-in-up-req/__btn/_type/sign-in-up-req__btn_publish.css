@@ -2,6 +2,11 @@
   width: 190px;
   font-size: 19px;
   margin: 40px 0 60px;
+  transition: all .5s ease;
+}
+
+.sign-in-up-req__btn_publish:hover {
+  background: #632EBA;
 }
 
 @media screen and (max-width: 1024px) {
