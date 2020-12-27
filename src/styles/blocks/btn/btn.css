@@ -18,3 +18,10 @@
 .btn:focus {
   outline: none;
 }
+
+@media screen and (max-width: 700px) {
+  .btn {
+    width: 22px;
+    height: 22px;
+  }
+}

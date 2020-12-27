@@ -1,0 +1,14 @@
+.opened-petition__block {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .opened-petition__block {
+    justify-content: end;
+  }
+}

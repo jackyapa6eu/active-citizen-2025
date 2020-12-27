@@ -1,0 +1,18 @@
+.add-new__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+  .add-new__container {
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__container {
+    justify-content: center;
+  }
+}

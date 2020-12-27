@@ -1,0 +1,88 @@
+/* Общие стили категорий */
+.categories__item {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #5D7DAD;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* Стили для категорий в ленте */
+
+.categories_place_feed .categories__item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background: #632EBA;
+  z-index: -1;
+  width: 0;
+  transition: all .5s ease;
+  height: 5px;
+}
+
+.categories_place_feed .categories__item:hover::after {
+  width: 100%;
+}
+
+/* Стили для категорий при добавлении новой карточки */
+
+.categories_place_add-new .categories__item {
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: solid 2px #DCE1FE;
+  border-radius: 5px;
+  width: 100%;
+  transition: all .5s ease;
+}
+
+.categories_place_add-new .categories__item:hover {
+  background: #632EBA;
+  color: #F4F5FF;
+}
+
+/* Стили для категорий в ленте на мобильной версии*/
+
+.categories_place_feed-mobile .categories__item {
+  font-size: 22px;
+  text-align: start;
+}
+
+
+@media screen and (max-width: 870px) {
+  .categories__item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .categories__item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories__item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .categories_place_feed-mobile .categories__item {
+    font-size: 16px;
+  }
+}
+
+/* Медиазапросы для категорий при добавлении нового поста */
+
+@media screen and (max-width: 900px) {
+  .categories_place_add-new .categories__item {
+
+  }
+}
+
+/* Медиазапросы для категорий при добавлении нового поста */

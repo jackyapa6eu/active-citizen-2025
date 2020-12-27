@@ -1,0 +1,25 @@
+.user__toggle-pass-btn {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  background-image: url(../../../images/input__show-pass.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+  .user__toggle-pass-btn {
+    right: 10px;
+    top: 3px;
+    background-size: auto;
+  }
+}

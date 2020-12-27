@@ -1,8 +1,6 @@
 .petitions__container_rating {
-  top: 145px;
-  left: 10px;
-  background: #C1A60A;
-  width: 145px;
-  height: 30px;
-  padding: 0 10px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 5px;
 }

@@ -1,0 +1,21 @@
+.header__logo-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 120%;
+  margin: 0 0 0 20px;
+  color: #3748A6;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo-title {
+    font-size: 25px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo-title {
+    font-size: 14px;
+  }
+}

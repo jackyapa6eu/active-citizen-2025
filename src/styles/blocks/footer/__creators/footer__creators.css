@@ -1,0 +1,23 @@
+.footer__creators {
+  grid-column: 2/3;
+  grid-row: 4;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__creators {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__creators {
+    font-weight: 300;
+    font-size: 12px;
+    margin: 56px 0 0;
+  }
+}

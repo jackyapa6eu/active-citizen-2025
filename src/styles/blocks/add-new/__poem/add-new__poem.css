@@ -1,0 +1,18 @@
+.add-new__poem {
+  width: 48%;
+  border: 2px solid rgba(28, 69, 131, 0.5);
+  border-radius: 5px;
+  margin-top: 25px;
+  max-height: 255px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__poem {
+    width: 100%;
+    max-height: 120px;
+    border-top: none;
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+  }
+}

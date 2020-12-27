@@ -8,10 +8,13 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/database";
 import UserContext from '../contexts/UserContext';
-import Petitions from './Petitions';
 import User from './User';
 import Header from './Header';
 import AddNew from './AddNew';
+import OpenedPetition from './OpenedPetition';
+import SignInUpReq from './SignInUpReq';
+import Feed from './Feed';
+import Footer from './Footer';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRR8gvYPh4zoGSzmQcyDz4vtkiS66NDFU",
@@ -72,6 +75,10 @@ function App() {
     })
   }
 
+  function showDate(date) {
+    let day = new Date(date);
+    return `${day.toLocaleString('ru',{day: 'numeric', month: 'long', year: 'numeric'}).replace('г.', '')}`
+}
 
   return (
     <div className="App">
@@ -81,7 +88,8 @@ function App() {
           <main className="main">
             <Switch>
               <Route exact path="/">
-                <Petitions petitions={petitions}/>
+                <SignInUpReq/>
+                <Feed petitions={petitions} showDate={showDate}/>
               </Route>
               <Route path="/user">
                 <User/>
@@ -89,9 +97,12 @@ function App() {
               <Route path="/add-new">
                 <AddNew/>
               </Route>
+              <Route path="/petitions/:pId">
+                <OpenedPetition showDate={showDate}/>
+              </Route>
             </Switch>
           </main>
-          <footer className="footer">footer</footer>
+          <Footer/>
         </div>
       </UserContext.Provider>
     </div>

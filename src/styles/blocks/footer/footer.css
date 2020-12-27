@@ -1,4 +1,6 @@
 .footer {
-  margin-top: auto;
-  background: hotpink;
+  width: 100%;
+  background: #dde0ff;
+  opacity: 0.9;
+  color: #02214f;
 }

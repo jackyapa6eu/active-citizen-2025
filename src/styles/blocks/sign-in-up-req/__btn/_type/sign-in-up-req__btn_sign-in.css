@@ -1,0 +1,28 @@
+.sign-in-up-req__btn_sign-in {
+  color: #02214F;
+  background: #FFFFFF;
+  border: 2px solid #3F5BFB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 7px rgba(153, 162, 255, 0.3);
+          box-shadow: 0px 0px 7px rgba(153, 162, 255, 0.3);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 850px) {
+  .sign-in-up-req__btn_sign-in {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sign-in-up-req__btn_sign-in {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in-up-req__btn_sign-in {
+    width: 69%;
+  }
+}

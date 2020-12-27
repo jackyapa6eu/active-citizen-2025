@@ -1,5 +1,11 @@
 .add-new {
   width: 100%;
   flex: 1;
-  padding-top: 40px;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .add-new {
+    margin-bottom: 50px;
+  }
 }

@@ -1,7 +1,9 @@
 .petitions__data {
-  font-family: 'Lora', sans-serif;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
+  align-self: flex-end;
   font-size: 14px;
   line-height: 120%;
-  color: #101010;
   margin: 0;
 }

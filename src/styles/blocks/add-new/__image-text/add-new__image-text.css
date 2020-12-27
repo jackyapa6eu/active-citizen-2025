@@ -1,0 +1,21 @@
+.add-new__image-text {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% - 120px);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: rgba(28, 69, 131, 0.54);
+  padding: 0 20px;
+  margin: 12px 0 0;
+  text-align: center;
+}
+
+.add-new__image_loaded .add-new__image-text {
+  opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .add-new__image-text {
+    display: none;
+  }
+}

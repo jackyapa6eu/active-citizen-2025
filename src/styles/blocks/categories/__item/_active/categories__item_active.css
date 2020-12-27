@@ -1,0 +1,7 @@
+.categories_place_feed .categories__item_active::after {
+  width: 100%;
+}
+
+.categories_place_add-new .categories__item_active {
+  border: solid 2px #632EBA;
+}

@@ -1,0 +1,15 @@
+.add-new__button_publish {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .add-new__button_publish {
+    margin-top: 105px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__button_publish {
+    margin-top: 20px;
+  }
+}

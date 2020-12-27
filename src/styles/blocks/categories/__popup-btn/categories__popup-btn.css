@@ -1,0 +1,33 @@
+.categories__popup-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: 120%;
+  color: #5D7DAD;
+  font-family: 'Ubuntu';
+  padding-left: 40px;
+  background-image: url(../../../images/categories-mobile-btn__image.svg);
+  background-size: 15px 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+
+.catigories__mobile-container_opened .categories__popup-btn {
+  background-image: url(../../../images/categories-mobile-btn__image_opened.svg);
+}
+
+@media screen and (max-width: 500px) {
+  .categories__popup-btn {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .categories__popup-btn {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+}

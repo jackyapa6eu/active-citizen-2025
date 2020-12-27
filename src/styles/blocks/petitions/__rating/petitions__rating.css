@@ -1,6 +1,12 @@
 .petitions__rating {
-  font-family: 'Lora', sans-serif;
-  font-size: 14px;
+  align-self: end;
+  font-size: 20px;
   line-height: 120%;
-  color: #FDFDFD;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .petitions__rating {
+    font-size: 16px;
+  }
 }

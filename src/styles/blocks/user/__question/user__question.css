@@ -1,9 +1,9 @@
 .user__question {
-  margin-top: auto;
-  margin-bottom: 40px;
-
-  font-family: 'Lora', sans-serif;
+  align-self: center;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   line-height: 140%;
-  color: #8E9295;
+  text-align: center;
+  color:#8E9295;
 }
+

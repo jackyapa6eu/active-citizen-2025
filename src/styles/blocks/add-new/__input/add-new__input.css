@@ -1,7 +1,28 @@
 .add-new__input {
-  width: 47.2%;
-  height: 100px;
-  overflow-y: scroll;
+  width: 100%;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  padding: 20px 35px 20px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 140%;
+  border: 2px solid rgba(28, 69, 131, 0.5);
+  resize: none;
+  color: #02214F;
+  min-height: 100%;
+}
+
+.add-new__input:hover {
+  border: 2px solid #4F92F6;
+  outline: none;
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__input {
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .add-new__input:hover {
+    color: #02214F;
+  }
 }

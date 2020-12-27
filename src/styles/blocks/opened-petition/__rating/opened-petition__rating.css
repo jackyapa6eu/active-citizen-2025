@@ -1,0 +1,12 @@
+.opened-petition__rating {
+  align-self: end;
+  font-size: 25px;
+  line-height: 120%;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .opened-petition__rating {
+    font-size: 16px;
+  }
+}

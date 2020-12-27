@@ -1,3 +1,4 @@
 .btn_like {
   background: url('../../../images/like.svg') center no-repeat;
+  background-size: cover;
 }

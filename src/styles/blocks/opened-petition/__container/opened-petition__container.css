@@ -1,0 +1,25 @@
+.opened-petition__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-column-gap: 65px;
+  box-sizing: border-box;
+  padding: 30px 39px;
+  font-family: "Alegreya", sans-serif;
+  color: #02214f;
+}
+
+@media screen and (max-width: 1024px) {
+  .opened-petition__container {
+    max-width: 528px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .opened-petition__container {
+    padding: 25px 20px 66px;
+  }
+}

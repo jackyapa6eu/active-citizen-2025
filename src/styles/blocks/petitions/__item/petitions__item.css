@@ -1,9 +1,10 @@
 .petitions__item {
-  background: url(../../../images/ellipse.png) no-repeat 10px 10px;
-  background-color:#F4F4F4;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  width: 350px;
-  height: 350px;
+  background: #f4f5ff;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 14px #c9ceff;
+  border-radius: 10px;
+  cursor: pointer;
 }

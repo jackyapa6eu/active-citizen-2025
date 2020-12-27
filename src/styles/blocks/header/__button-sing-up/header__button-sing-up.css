@@ -1,0 +1,9 @@
+.header__button-sing-up {
+  width: 190px;
+  transition: all .5s ease;
+}
+
+
+.header__button-sing-up:hover {
+  background: #632EBA;
+}

@@ -1,0 +1,9 @@
+.add-new__button_translate {
+  box-shadow: 0px 0px 10px rgba(153, 162, 255, 0.2);
+}
+
+@media screen and (max-width: 800px) {
+  .add-new__button_translate {
+    display: none;
+  }
+}

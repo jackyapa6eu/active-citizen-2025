@@ -1,0 +1,29 @@
+.header__quite-btn {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: start;
+  color: #5D7DAD;
+  padding: 0;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header__quite-btn:hover {
+  color: #632EBA;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__quite-btn  {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__quite-btn  {
+    font-size: 16px;
+    line-height: 110%;
+  }
+}

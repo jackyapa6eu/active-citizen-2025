@@ -1,0 +1,10 @@
+.footer__title {
+  color: #02214f;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__title {
+    text-align: center;
+    margin: 0;
+  }
+}
