@@ -1,0 +1,32 @@
+.add-new__are-you-sure-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .add-new__are-you-sure-btns {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .add-new__are-you-sure-btns {
+    max-width: 292px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .add-new__are-you-sure-btns {
+    max-width: 272px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-new__are-you-sure-btns {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

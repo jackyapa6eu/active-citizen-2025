@@ -5,9 +5,17 @@
   justify-content: space-between;
   align-items: center;
   margin: 25px auto 80px;
+  padding: 0 39px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
+  .categories_place_feed {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .categories_place_feed {
     display: none;
   }

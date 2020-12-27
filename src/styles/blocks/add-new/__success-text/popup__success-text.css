@@ -1,0 +1,42 @@
+.popup__success-text {
+  color: #3748A6;
+  margin: 0;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup__success-text {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .popup__success-text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popup__success-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .popup__success-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 13px;
+  }
+}

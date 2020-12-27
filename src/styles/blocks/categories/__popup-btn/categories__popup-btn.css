@@ -18,6 +18,13 @@
   background-image: url(../../../images/categories-mobile-btn__image_opened.svg);
 }
 
+@media screen and (max-width: 500px) {
+  .categories__popup-btn {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .categories__popup-btn {
     font-size: 16px;

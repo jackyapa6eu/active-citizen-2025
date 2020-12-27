@@ -1,0 +1,33 @@
+.button_place_are-you-sure {
+  width: 180px;
+}
+
+@media screen and (max-width: 1100px) {
+  .button_place_are-you-sure {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button_place_are-you-sure {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .button_place_are-you-sure {
+    width: 131px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button_place_are-you-sure {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .button_place_are-you-sure:last-of-type {
+    margin-bottom: 10px;
+  }
+}

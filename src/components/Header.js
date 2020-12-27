@@ -59,7 +59,7 @@ function Header({setUser}) {
       <div className={userIconSelectors} onClick={handleUserIconClick}>
         <div className={loginContainerSelectors}>
           <span className="header__user-name">{user.secondName} {user.name}</span>
-          <Link className="header__add-new-link">Создать публикацию</Link>
+          <Link to='/add-new' className="header__add-new-link">Создать публикацию</Link>
           <button onClick={signOut} className="header__quite-btn">Выход</button>
         </div>
       </div>
