@@ -25,6 +25,6 @@ https://jackyapa6eu.github.io/active-citizen-2025/#/
 Александр Распертов  
 Виктория Велимирова  
 
-## [Ссылка на макет в figma]([https://ibs-datafort.web.app/](https://www.figma.com/file/046IwHoBawKILZrn6EWwW7/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%22%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B8%D0%BD-%D0%BF%D0%BE%D1%8D%D1%82%22.-%D0%9C%D0%B0%D0%BA%D0%B5%D1%82-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%E2%84%96-40.?node-id=324%3A2165))
+[Ссылка на макет в figma]([https://ibs-datafort.web.app/](https://www.figma.com/file/046IwHoBawKILZrn6EWwW7/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%22%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B8%D0%BD-%D0%BF%D0%BE%D1%8D%D1%82%22.-%D0%9C%D0%B0%D0%BA%D0%B5%D1%82-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%E2%84%96-40.?node-id=324%3A2165))
 
 
