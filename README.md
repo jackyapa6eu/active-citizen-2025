@@ -16,8 +16,9 @@
 `cd active-citizen-2025`  
 `npm install`  
 
-## [Ссылка на Github Pages](https://jackyapa6eu.github.io/active-citizen-2025/#/)
+## Статус проекта: завершен
 
+## [Ссылка на Github Pages](https://jackyapa6eu.github.io/active-citizen-2025/#/)
 
 ## Команда №40 заняла 3-е место (из 45)
 Евгений Денисов  
