@@ -27,7 +27,7 @@ npm start
 npm run build
 ```
 
-## Статус проекта: завершен
+## Статус проекта: `завершен`
 
 ## [Ссылка на Github Pages](https://jackyapa6eu.github.io/active-citizen-2025/#/)
 
