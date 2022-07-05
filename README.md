@@ -11,13 +11,21 @@
 - Router
 - classNames  
 
-## Сборка
-- `git clone https://github.com/jackyapa6eu/active-citizen-2025.git`  
-- `cd active-citizen-2025`  
-- `npm install`  
-
+## Установка проекта
+```
+git clone https://github.com/jackyapa6eu/active-citizen-2025.git  
+cd active-citizen-2025  
+npm install  
+```
 ## Запуск
-- `npm start`
+```
+npm start
+```
+
+## Сборка
+```
+npm run build
+```
 
 ## Статус проекта: завершен
 
