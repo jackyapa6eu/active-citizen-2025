@@ -8,14 +8,15 @@
 ## Технологии
 - React  
 - Firebase (авторизация, хранение фотографий и данных)  
-- Router, classNames  
+- Router
+- classNames  
 
 ## Сборка
-git clone https://github.com/jackyapa6eu/active-citizen-2025.git  
-cd active-citizen-2025  
-npm install  
+`git clone https://github.com/jackyapa6eu/active-citizen-2025.git`  
+`cd active-citizen-2025`  
+`npm install`  
 
-## Ссылка на демо на Github Pages
+## Ссылка на Github Pages
 https://jackyapa6eu.github.io/active-citizen-2025/#/
 
 
